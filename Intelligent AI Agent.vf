@@ -1,0 +1,4696 @@
+{
+  "version": {
+    "_version": 13.02,
+    "autoSaveFromRestore": false,
+    "canvasTemplates": [],
+    "components": [],
+    "creatorID": 1069714,
+    "manualSave": false,
+    "model": {},
+    "name": "Initial Version",
+    "platformData": {
+      "slots": [],
+      "intents": [
+        {
+          "key": "None",
+          "name": "None",
+          "slots": [],
+          "inputs": [],
+          "noteID": null
+        },
+        {
+          "key": "6797c2110cfd6c00ccbedd9f",
+          "name": "No",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "I'm good",
+              "slots": []
+            },
+            {
+              "text": "Nope",
+              "slots": []
+            },
+            {
+              "text": "I think I'm good thanks",
+              "slots": []
+            },
+            {
+              "text": "Definitely not",
+              "slots": []
+            },
+            {
+              "text": "Nope",
+              "slots": []
+            },
+            {
+              "text": "Under no circumstances",
+              "slots": []
+            },
+            {
+              "text": "Not at all",
+              "slots": []
+            },
+            {
+              "text": "Nope, not at all",
+              "slots": []
+            },
+            {
+              "text": "No way",
+              "slots": []
+            },
+            {
+              "text": "By no means",
+              "slots": []
+            },
+            {
+              "text": "Not in the slightest",
+              "slots": []
+            },
+            {
+              "text": "No chance",
+              "slots": []
+            },
+            {
+              "text": "Absolutely not",
+              "slots": []
+            },
+            {
+              "text": "Not at all",
+              "slots": []
+            },
+            {
+              "text": "Negative",
+              "slots": []
+            },
+            {
+              "text": "Sorry, no",
+              "slots": []
+            },
+            {
+              "text": "Definitely not",
+              "slots": []
+            },
+            {
+              "text": "That's wrong",
+              "slots": []
+            },
+            {
+              "text": "Incorrect",
+              "slots": []
+            },
+            {
+              "text": "Nope",
+              "slots": []
+            },
+            {
+              "text": "No",
+              "slots": []
+            }
+          ],
+          "noteID": "kteeo0jwm",
+          "description": "Trigger this intent then the user responds negatively"
+        },
+        {
+          "key": "6797c2660cfd6c00ccbeddd1",
+          "name": "Yes",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "Definitely",
+              "slots": []
+            },
+            {
+              "text": "Indeed",
+              "slots": []
+            },
+            {
+              "text": "Of course",
+              "slots": []
+            },
+            {
+              "text": "Certainly",
+              "slots": []
+            },
+            {
+              "text": "Without question",
+              "slots": []
+            },
+            {
+              "text": "Sure",
+              "slots": []
+            },
+            {
+              "text": "Definitely",
+              "slots": []
+            },
+            {
+              "text": "You bet",
+              "slots": []
+            },
+            {
+              "text": "Without a doubt",
+              "slots": []
+            },
+            {
+              "text": "By all means",
+              "slots": []
+            },
+            {
+              "text": "Agreed",
+              "slots": []
+            },
+            {
+              "text": "Absolutely",
+              "slots": []
+            },
+            {
+              "text": "That's correct",
+              "slots": []
+            },
+            {
+              "text": "Indeed",
+              "slots": []
+            },
+            {
+              "text": "Affirmative",
+              "slots": []
+            },
+            {
+              "text": "You are right",
+              "slots": []
+            },
+            {
+              "text": "Correct",
+              "slots": []
+            },
+            {
+              "text": "Yep",
+              "slots": []
+            },
+            {
+              "text": "Yes",
+              "slots": []
+            }
+          ],
+          "noteID": "kteep0jxy",
+          "description": "Trigger this intent when the user responds positively."
+        }
+      ],
+      "settings": {
+        "restart": true,
+        "repeat": 100,
+        "locales": [
+          "en-US"
+        ],
+        "globalNoMatch": {
+          "type": "static",
+          "prompt": {
+            "content": [
+              {
+                "children": [
+                  {
+                    "text": "Sorry, I didn’t get that. Please try again."
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "messageDelay": {
+          "durationMilliseconds": 500
+        },
+        "defaultVoice": "elevenlabs:eleven_turbo_v2_5:FGY2WhTYpPnrIDTdsKH5",
+        "deepgramASR": {
+          "silenceWaitMS": 10,
+          "punctuationWaitMS": 1000,
+          "partialWaitMS": 1500,
+          "interruptionWaitWords": 2,
+          "audioCue": null
+        }
+      },
+      "publishing": {
+        "avatar": "https://cdn.voiceflow.com/assets/logo.png",
+        "color": "#397DFF",
+        "description": "Hi, how can I help you today?",
+        "feedback": false,
+        "image": "https://cdn.voiceflow.com/assets/logo.png",
+        "persistence": "localStorage",
+        "position": "right",
+        "spacing": {
+          "side": 24,
+          "bottom": 24
+        },
+        "title": "Your AI agent",
+        "watermark": true,
+        "audioInterface": true
+      },
+      "platform": "webchat"
+    },
+    "programResources": {
+      "agents": {
+        "685f049820a7778036ab7656": {
+          "settings": {
+            "model": "gpt-4.1-2025-04-14",
+            "maxTokens": 3748,
+            "temperature": 0.3
+          },
+          "apiTools": [],
+          "pathTools": [
+            {
+              "id": "685f0f3209b51378c94a7285",
+              "name": "CallInfoCaptured",
+              "variables": [
+                {
+                  "name": "callerName",
+                  "required": true,
+                  "description": "The caller's first name only. Keep it simple for phone conversations. Examples: 'Marcus', 'Sarah', 'Mike', 'Jennifer'. Don't ask for last names unless they volunteer it."
+                },
+                {
+                  "name": "serviceNeeded",
+                  "required": true,
+                  "description": "What the caller needs help with in their own words. Be specific but concise. Examples: 'electrical outlet not working', 'leaky kitchen faucet', 'need handyman for TV mounting', 'HVAC making strange noise', 'emergency - no power in house'."
+                },
+                {
+                  "name": "urgencyLevel",
+                  "required": true,
+                  "description": "This variable MUST contain exactly one of these three words only: 'emergency', 'urgent', or 'routine'. Nothing else. \n\n- Use 'emergency' for true emergencies (no power, gas leak, electrical hazard, flood)\n- Use 'urgent' for same-day needs that aren't life-threatening (broken AC, major leak, no heat)\n- Use 'routine' for everything else (general questions, non-urgent repairs, scheduling)\n\nExamples: 'emergency', 'urgent', 'routine' - NEVER use phrases like 'very urgent' or 'kind of routine'."
+                }
+              ],
+              "description": "Use this path when you have successfully captured the caller's name, what they need help with, and assessed how urgent it is. You should have enough information to route them to the next step."
+            }
+          ],
+          "description": "",
+          "instructions": "You are Sarah, the professional virtual receptionist for Silverbrook Home Services. You handle all incoming phone calls with warmth and efficiency.\n\n**IMPORTANT: Check for Previous Input**\n- The caller may have already told us something: {last_utterance}\n- If last_utterance has content: Acknowledge what they said and continue from there\n- If last_utterance is empty: Start with normal greeting questions\n\n**Your Job:**\n1. Get the caller's name (if not already provided)\n2. Understand what they need help with (may already be in last_utterance)\n3. Determine if it's routine, urgent, or emergency\n4. Keep responses short and conversational - you're on the phone\n\n**Important Guidelines:**\n- Keep ALL responses under 20 words when possible\n- Never list multiple options - just ask what they need\n- Don't use numbered lists or bullet points (this is a phone call)\n- Sound natural and helpful, not robotic\n- Ask one question at a time\n- DON'T repeat questions if they already told you something\n\n**CRITICAL: Urgency Level Classification**\nYou MUST classify every call into exactly ONE of these three categories:\n- **\"emergency\"** - True emergencies (no power, gas leak, flood, electrical hazard)\n- **\"urgent\"** - Needs help today but not life-threatening (broken AC in summer, major leak)\n- **\"routine\"** - Can wait for normal scheduling (general questions, non-urgent repairs)\n\n**What to Collect:**\n- Their name (first name is fine)\n- What they need help with (check last_utterance first!)\n- How urgent it is (MUST be one of the three words above)\n\n**Conversation Flow Examples:**\n\n**If they already explained their need (last_utterance has content):**\n- \"Thanks for explaining about [their issue]. May I get your first name?\"\n- \"Got it, and is this something urgent or can it wait for regular business hours?\"\n\n**If last_utterance is empty:**\n- \"May I get your first name please?\"\n- \"What can we help you with today?\"\n- \"Is this something urgent or can it wait until regular business hours?\"\n\n**When you have their name and understand their need, use the CallInfoCaptured exit path.**\n\n**Remember:** You're on a phone call - be conversational, not formal. Acknowledge what they've already told you!",
+          "functionTools": [],
+          "webSearchTool": null,
+          "integrationTools": [],
+          "knowledgeBaseTool": {
+            "enabled": false,
+            "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+          },
+          "buttonTool": null,
+          "cardTool": null,
+          "carouselTool": null
+        },
+        "6860052d09b51378c94ac469": {
+          "settings": {
+            "model": "claude-4-sonnet",
+            "maxTokens": 500,
+            "temperature": 0.3
+          },
+          "apiTools": [],
+          "pathTools": [
+            {
+              "id": "6860058209b51378c94ac4ad",
+              "name": "InformationComplete",
+              "variables": [
+                {
+                  "name": "questionsAsked",
+                  "required": true,
+                  "description": "What specific questions or information the caller asked about. Examples: 'asked about electrical outlet repair pricing', 'wanted to know business hours', 'asked what's included in service call', 'inquired about HVAC tune-up cost'."
+                },
+                {
+                  "name": "informationProvided",
+                  "required": true,
+                  "description": "Summary of the information you provided to answer their questions. Examples: 'explained $95/hour electrical rate plus $75 service call', 'provided business hours and weekend availability', 'described what's included in HVAC tune-up service'."
+                }
+              ],
+              "description": "Use this path when you have answered all their questions and they don't need to schedule anything right now. They're satisfied with the information and ending the call."
+            },
+            {
+              "id": "6860058309b51378c94ac4ae",
+              "name": "SchedulingRequested",
+              "variables": [
+                {
+                  "name": "questionsAsked",
+                  "required": true,
+                  "description": "What specific questions or information the caller asked about. Examples: 'asked about electrical outlet repair pricing', 'wanted to know business hours', 'asked what's included in service call', 'inquired about HVAC tune-up cost'."
+                },
+                {
+                  "name": "informationProvided",
+                  "required": true,
+                  "description": "Summary of the information you provided to answer their questions. Examples: 'explained $95/hour electrical rate plus $75 service call', 'provided business hours and weekend availability', 'described what's included in HVAC tune-up service'."
+                }
+              ],
+              "description": "Use this path when the caller expresses interest in booking an appointment or scheduling service. Look for phrases like 'can I schedule', 'when are you available', 'I'd like to book', or 'let's set up an appointment'."
+            }
+          ],
+          "description": "",
+          "instructions": "You are the knowledgeable service specialist for Silverbrook Home Services. You handle routine inquiries and provide helpful information about our services.\n\n**Context You Already Know:**\n- Caller Name: {callerName}\n- Their Need: {serviceNeeded}\n- This is a routine (non-urgent) inquiry\n\n**Your Job:**\n1. Answer their questions about services, pricing, or processes\n2. Provide helpful information based on what they need\n3. Determine if they want to schedule an appointment\n4. Keep responses short and conversational - you're on the phone\n\n**Services Information:**\n- Electrical: $95/hour, $75 service call (waived with repair)\n- Plumbing: $85/hour, $75 service call (waived with repair)  \n- HVAC: $85/hour, seasonal tune-ups $149\n- Handyman: $85/hour\n- Emergency rate: $150/hour (evenings/weekends)\n\n**Business Hours:**\n- Monday-Friday: 7 AM - 6 PM\n- Saturday: 8 AM - 4 PM\n- Sunday: Emergency only\n- 24/7 emergency service available\n\n**Common Questions to Handle:**\n- Pricing and service costs\n- What's included in service calls\n- Business hours and availability\n- Types of services we offer\n- How long appointments take\n- What to expect during service\n\n**Important Guidelines:**\n- Keep responses under 30 words when possible\n- Be helpful and informative\n- Ask if they want to schedule after providing information\n- Don't overwhelm with too much detail\n- Sound friendly and professional\n\n**When they want to schedule an appointment, use the SchedulingRequested exit path.**\n**When their questions are answered and they don't need scheduling, use the InformationComplete exit path.**",
+          "functionTools": [],
+          "webSearchTool": null,
+          "integrationTools": [],
+          "knowledgeBaseTool": {
+            "enabled": true,
+            "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+          },
+          "buttonTool": null,
+          "cardTool": null,
+          "carouselTool": null
+        },
+        "6860247d09b51378c94ad8a4": {
+          "settings": {
+            "model": "claude-4-sonnet",
+            "maxTokens": 500,
+            "temperature": 0.3
+          },
+          "apiTools": [],
+          "pathTools": [
+            {
+              "id": "68602b5b09b51378c94adc34",
+              "name": "AppointmentTimeCollected",
+              "variables": [
+                {
+                  "name": "preferredDateTime",
+                  "required": true,
+                  "description": "he caller's preferred appointment day and time in natural, clear language that includes both day and time. Must be specific enough to understand exactly when they want to come in. Good examples: 'tomorrow at 2 PM', 'next Friday at 9 AM', 'Thursday afternoon at 3:30', 'Monday morning at 10'. Bad examples: 'morning', 'next week', 'afternoon' (too vague)."
+                }
+              ],
+              "description": "Trigger this path immediately when you have successfully captured a clear day and time preference from the caller. The preferredDateTime variable should contain both a specific day (like 'tomorrow', 'Friday', 'next Monday') and a specific time (like '2 PM', '9 AM', '3:30'). Exit as soon as you have this information."
+            }
+          ],
+          "description": "",
+          "instructions": "You are the appointment coordinator for Silverbrook Home Services. Your job is to book appointments quickly and efficiently.\n\n**Context You Already Know:**\n- Caller Name: {callerName}\n- Service Needed: {serviceNeeded}\n- They want to schedule an appointment\n\n**CRITICAL: ALWAYS Check Previous Attempt Status**\n- ISO_Format variable contains: \"{ISO_Format}\"\n- You MUST check this variable first before responding\n\n**Variable Check Logic:**\n- If ISO_Format is empty, blank, or null: This is their FIRST scheduling attempt\n- If ISO_Format contains ANY text/content: This is a RETRY - previous attempt failed\n\n**Your Response Based on ISO_Format:**\n\n**FIRST ATTEMPT (ISO_Format is empty):**\n- Start with: \"When would work best for you?\"\n- Get their preferred day and time\n\n**RETRY ATTEMPT (ISO_Format has content):**\n- Start with: \"Let me get a clearer time from you. When would work best?\"\n- Acknowledge there was an issue with their previous time choice\n- Ask for a more specific day and time\n\n**Your Job:**\n1. CHECK ISO_Format variable first\n2. Respond appropriately based on whether it's first attempt or retry\n3. Get a clear day and time that includes both specific day AND specific time\n4. Exit immediately once you have both\n\n**Business Hours for Scheduling:**\n- Monday-Friday: 7 AM - 6 PM\n- Saturday: 8 AM - 4 PM  \n- Sunday: Emergency only (no routine scheduling)\n\n**Time and Date Requirements:**\n- Must get BOTH day AND time clearly\n- Good examples: \"Tomorrow at 2 PM\", \"Next Friday at 9 AM\", \"Thursday at 3:30\"\n- Bad examples: \"Morning\", \"Next week\", \"Afternoon\" (too vague)\n\n**Important Guidelines:**\n- Keep responses short and friendly - you're on the phone\n- Always check ISO_Format variable before your first response\n- Don't ask for exact formats - natural language is fine\n- Once you have specific day + time, use AppointmentTimeCollected exit path\n\n**Current date for reference:** {current_date}\n\n**Remember:** Always acknowledge if this is a retry attempt based on ISO_Format content!",
+          "functionTools": [],
+          "webSearchTool": null,
+          "integrationTools": [],
+          "knowledgeBaseTool": {
+            "enabled": false,
+            "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+          },
+          "buttonTool": null,
+          "cardTool": null,
+          "carouselTool": null
+        }
+      },
+      "prompts": {},
+      "apiTools": {},
+      "messages": {
+        "685f03c520a7778036ab75ef": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Hello, thank you for calling Silverbrook Home Services! This is Sarah, your virtual assistant. How can I help you today?"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68600cf809b51378c94ac6e1": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Perfect "
+                        },
+                        {
+                          "text": "{callerName}"
+                        },
+                        {
+                          "text": "! If you need anything else or decide to schedule service, just give us a call back. Thanks for choosing Silverbrook Home Services!"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "68602e1309b51378c94add62": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        },
+                        {
+                          "text": "{ISO_Format}"
+                        },
+                        {
+                          "text": " "
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        },
+        "686034ab09b51378c94adfd3": {
+          "variants": {
+            "default:en-us": [
+              {
+                "data": {
+                  "text": [
+                    {
+                      "children": [
+                        {
+                          "text": "Perfect "
+                        },
+                        {
+                          "text": "{callerName}"
+                        },
+                        {
+                          "text": "! I've got you scheduled for "
+                        },
+                        {
+                          "text": "{preferredDateTime}"
+                        },
+                        {
+                          "text": ". You'll receive a confirmation shortly with all the details. Have a nice day, bye"
+                        }
+                      ]
+                    }
+                  ],
+                  "delay": null
+                },
+                "condition": null
+              }
+            ]
+          }
+        }
+      },
+      "integrationTools": {}
+    },
+    "prototype": {
+      "type": "chat",
+      "data": {
+        "name": "Management Answering AI",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [],
+        "slots": []
+      },
+      "context": {
+        "stack": [
+          {
+            "diagramID": "64dbb6696a8fab0013dba194",
+            "storage": {},
+            "variables": {}
+          }
+        ],
+        "variables": {}
+      },
+      "surveyorContext": {
+        "nonDraftResponsesMap": {},
+        "responseMessagesByDiscriminatorIDMap": {},
+        "responseDiscriminatorsByResponseIDMap": {},
+        "functionDefinitions": {
+          "68600f1709b51378c94ac89d": {
+            "name": "Natural Language to ISO 8601 Converter",
+            "codeId": "685d72879036e9e5b9069272-68600f1709b51378c94ac89d-kppgnfcf.js",
+            "pathCodes": [
+              "error",
+              "succes",
+              "ambiguous",
+              "invalid_time",
+              "requires_clarification",
+              "no_time_specified",
+              "past_date"
+            ],
+            "inputVars": {
+              "timezone": {
+                "type": "text",
+                "description": "ISO 8601 timezone offset format like \"+02:00\" or \"-05:00"
+              },
+              "userInput": {
+                "type": "text",
+                "description": "Natural language date/time expression like \"tomorrow at 3pm\" or \"next"
+              }
+            },
+            "outputVars": {
+              "iso8601DateTime": {
+                "type": "text",
+                "description": " Converted date/time in ISO 8601 format with timezone"
+              }
+            },
+            "description": ""
+          },
+          "68602a147d18db1e5aac877a": {
+            "name": "Get current time",
+            "codeId": "685d72879036e9e5b9069272-68602a147d18db1e5aac877a-fgllfeo.js",
+            "pathCodes": [
+              "success",
+              "error"
+            ],
+            "inputVars": {
+              "timezone": {
+                "type": "text",
+                "description": "The desired timezone. Should follow the IANA timezone database naming conventions (ie. America/New_York)"
+              }
+            },
+            "outputVars": {
+              "current_date": {
+                "type": "text",
+                "description": "The available times that are returned from cal.com and then converted into the desired timezone."
+              },
+              "day_of_week": {
+                "type": "text",
+                "description": "The current way of the week."
+              },
+              "timezone": {
+                "type": "text",
+                "description": "The timezone that was provided as input."
+              }
+            },
+            "description": "Gets the current date and time for a given timezone"
+          }
+        },
+        "referencedResponseIDs": [
+          "685f03c520a7778036ab75ef",
+          "68600cf809b51378c94ac6e1",
+          "68602e1309b51378c94add62",
+          "686034ab09b51378c94adfd3"
+        ],
+        "referencedAgentsIDs": [
+          "685f049820a7778036ab7656",
+          "6860052d09b51378c94ac469",
+          "6860247d09b51378c94ad8a4"
+        ],
+        "referencedAPIToolIDs": [],
+        "referencedIntegrationToolIDs": [],
+        "slotsMap": {},
+        "platform": "webchat",
+        "products": {},
+        "extraSlots": [],
+        "interfaces": [],
+        "permissions": [],
+        "projectType": "chat",
+        "extraIntents": [],
+        "usedEventsSet": [],
+        "usedIntentsSet": [],
+        "goToIntentsSet": [],
+        "entitiesMap": {},
+        "variableMap": {},
+        "intentsMap": {},
+        "requiredEntitiesMap": {},
+        "eventsMap": {},
+        "cmsVariables": {
+          "questionsAsked": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "informationProvided": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "ISO_Format": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "requested_time": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "timezone": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "day_of_week": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "current_date": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "preferredDateTime": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "sessions": {
+            "isSystem": true,
+            "description": "The number of times a particular user has opened the app.",
+            "defaultValue": null
+          },
+          "user_id": {
+            "isSystem": true,
+            "description": "The user's unique ID.",
+            "defaultValue": null
+          },
+          "timestamp": {
+            "isSystem": true,
+            "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+            "defaultValue": null
+          },
+          "platform": {
+            "isSystem": true,
+            "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+            "defaultValue": null
+          },
+          "locale": {
+            "isSystem": true,
+            "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+            "defaultValue": null
+          },
+          "intent_confidence": {
+            "isSystem": true,
+            "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+            "defaultValue": null
+          },
+          "last_response": {
+            "isSystem": true,
+            "description": "The agent's last response (text/speak) in a string.",
+            "defaultValue": null
+          },
+          "last_event": {
+            "isSystem": true,
+            "description": "The object containing the last event that the user client has triggered.",
+            "defaultValue": null
+          },
+          "last_utterance": {
+            "isSystem": true,
+            "description": "The user's last utterance in a text string.",
+            "defaultValue": null
+          },
+          "vf_memory": {
+            "isSystem": true,
+            "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+            "defaultValue": null
+          },
+          "callerName": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "serviceNeeded": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          },
+          "urgencyLevel": {
+            "isArray": false,
+            "isSystem": false,
+            "datatype": "any",
+            "description": "",
+            "defaultValue": null
+          }
+        },
+        "cmsEntities": {}
+      },
+      "settings": {},
+      "platform": "webchat"
+    },
+    "settings": {
+      "memory": {
+        "turns": 25
+      },
+      "intentClassification": {
+        "type": "rag",
+        "params": {
+          "model": "claude-3.5-haiku",
+          "temperature": 0.1
+        },
+        "promptWrapper": null
+      },
+      "voice": {
+        "failureMessage": "We’re sorry, but the call cannot be completed at this time. Please try again later.",
+        "hasCallRecording": false,
+        "tts": {
+          "provider": "elevenlabs",
+          "voice": "FGY2WhTYpPnrIDTdsKH5",
+          "model": "eleven_turbo_v2_5",
+          "settings": {}
+        }
+      },
+      "globalNoMatch": {
+        "type": "static",
+        "prompt": [
+          {
+            "text": [
+              "Sorry, I didn’t get that. Please try again."
+            ]
+          }
+        ]
+      }
+    },
+    "topics": [
+      {
+        "type": "DIAGRAM",
+        "sourceID": "64dbb6696a8fab0013dba194"
+      }
+    ],
+    "variables": [
+      "questionsAsked",
+      "informationProvided",
+      "ISO_Format",
+      "requested_time",
+      "timezone",
+      "day_of_week",
+      "current_date",
+      "preferredDateTime",
+      "sessions",
+      "user_id",
+      "timestamp",
+      "platform",
+      "locale",
+      "intent_confidence",
+      "last_response",
+      "last_event",
+      "last_utterance",
+      "vf_memory",
+      "callerName",
+      "serviceNeeded",
+      "urgencyLevel"
+    ],
+    "_id": "685d72879036e9e5b9069272",
+    "updatedAt": "2025-06-28T20:44:41.021Z",
+    "publishedAt": "2024-09-27T16:54:27.996Z",
+    "domains": [
+      {
+        "id": "cla06iyr900b206pkh8d4ap8n",
+        "name": "Home",
+        "live": true,
+        "topicIDs": [
+          "64dbb6696a8fab0013dba194"
+        ],
+        "rootDiagramID": "64dbb6696a8fab0013dba194",
+        "updatedBy": 1069714,
+        "updatedAt": "2025-06-26T16:17:11.414Z"
+      }
+    ],
+    "projectID": "685d72879036e9e5b9069271",
+    "rootDiagramID": "64dbb6696a8fab0013dba194",
+    "templateDiagramID": "64dbb6696a8fab0013dba195"
+  },
+  "diagrams": {
+    "64dbb6696a8fab0013dba195": {
+      "name": "Template Diagram",
+      "type": "TEMPLATE",
+      "zoom": 100,
+      "nodes": {},
+      "offsetX": 0,
+      "offsetY": 0,
+      "modified": 1701833501,
+      "creatorID": 1069714,
+      "variables": [],
+      "menuItems": [],
+      "_id": "685d72879036e9e5b9069274",
+      "diagramID": "64dbb6696a8fab0013dba195",
+      "versionID": "685d72879036e9e5b9069272"
+    },
+    "64dbb6696a8fab0013dba194": {
+      "name": "ROOT",
+      "type": "TOPIC",
+      "zoom": 41.91213616786172,
+      "nodes": {
+        "start00000000000000000000": {
+          "type": "start",
+          "data": {
+            "name": "Start",
+            "color": "#56b365",
+            "steps": [],
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {
+                "next": {
+                  "type": "next",
+                  "target": "685f03c5361c9ed3b6f590a4",
+                  "id": "6032afcf359e8c14c06c0319",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          -221.55,
+                          39.56
+                        ]
+                      },
+                      {
+                        "point": [
+                          -176.99,
+                          39.53
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "dynamic": []
+            },
+            "label": "Start"
+          },
+          "nodeID": "start00000000000000000000",
+          "coords": [
+            -285.8888047953781,
+            17.557554471556593
+          ]
+        },
+        "685f03c5361c9ed3b6f590a2": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "685f03c520a7778036ab75ef",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "685f03c5361c9ed3b6f590a3"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "685f03c5361c9ed3b6f590a2"
+        },
+        "685f03c5361c9ed3b6f590a4": {
+          "type": "block",
+          "data": {
+            "name": "Start",
+            "steps": [
+              "685f03c5361c9ed3b6f590a2",
+              "685f0484361c9ed3b6f590ab"
+            ],
+            "color": "#56b365"
+          },
+          "nodeID": "685f03c5361c9ed3b6f590a4",
+          "coords": [
+            -11.987861567959934,
+            12.528324793668357
+          ]
+        },
+        "685f0484361c9ed3b6f590ab": {
+          "type": "capture-v3",
+          "data": {
+            "name": "Capture",
+            "capture": {
+              "type": "user-reply",
+              "variableID": "last_utterance"
+            },
+            "listenForOtherTriggers": false,
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "685f048f361c9ed3b6f590b2",
+                  "id": "685f0484361c9ed3b6f590ac",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          154.01,
+                          213.03
+                        ]
+                      },
+                      {
+                        "point": [
+                          178.01,
+                          213.03
+                        ]
+                      },
+                      {
+                        "point": [
+                          178.01,
+                          283.53
+                        ]
+                      },
+                      {
+                        "point": [
+                          -9.93,
+                          283.53
+                        ]
+                      },
+                      {
+                        "point": [
+                          -9.93,
+                          312.64
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "685f0484361c9ed3b6f590ab"
+        },
+        "685f048f361c9ed3b6f590b1": {
+          "type": "agent",
+          "data": {
+            "name": "Untitled agent",
+            "agentID": "685f049820a7778036ab7656",
+            "listenForOtherTriggers": true,
+            "exitEveryConversationalTurn": false,
+            "portsV2": {
+              "byKey": {
+                "685f0f3209b51378c94a7285": {
+                  "id": "685f0f3288efef1ac06c62b5",
+                  "target": "685f1099361c9ed3b6f590c0",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          156.07,
+                          510.64
+                        ]
+                      },
+                      {
+                        "point": [
+                          180.07,
+                          510.64
+                        ]
+                      },
+                      {
+                        "point": [
+                          180.07,
+                          572.36
+                        ]
+                      },
+                      {
+                        "point": [
+                          -9.47,
+                          572.36
+                        ]
+                      },
+                      {
+                        "point": [
+                          -9.47,
+                          596.36
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "685f048f361c9ed3b6f590b1",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "685f048f361c9ed3b6f590b2": {
+          "type": "block",
+          "data": {
+            "name": "The Receptionist",
+            "steps": [
+              "685f048f361c9ed3b6f590b1"
+            ],
+            "color": "#5b9fd7"
+          },
+          "nodeID": "685f048f361c9ed3b6f590b2",
+          "coords": [
+            -9.926204126811564,
+            312.6420834858889
+          ]
+        },
+        "685f1027361c9ed3b6f590ba": {
+          "type": "markup_text",
+          "data": {
+            "scale": 0.991571460501256,
+            "rotate": 0,
+            "content": [
+              {
+                "textAlign": "center",
+                "children": [
+                  {
+                    "text": "Phase 1"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 322.2502136230469,
+            "backgroundColor": {
+              "r": 197,
+              "g": 231,
+              "b": 246,
+              "a": 1
+            },
+            "name": "Block"
+          },
+          "nodeID": "685f1027361c9ed3b6f590ba",
+          "coords": [
+            -171.6057734654987,
+            -49.18365573068363
+          ]
+        },
+        "685f1099361c9ed3b6f590bd": {
+          "type": "condition-v3",
+          "data": {
+            "name": "",
+            "noMatch": {
+              "path": true,
+              "repromptID": null
+            },
+            "condition": {
+              "type": "logic",
+              "items": [
+                {
+                  "id": "cmcfcbzsb01593b81i8y82j0q",
+                  "value": {
+                    "type": "value-variable",
+                    "matchAll": true,
+                    "assertions": [
+                      {
+                        "lhs": {
+                          "variableID": "685f0fe609b51378c94a7291"
+                        },
+                        "rhs": [
+                          {
+                            "text": [
+                              "urgent"
+                            ]
+                          }
+                        ],
+                        "key": "cmcfcbzsb015a3b81wupeagqw",
+                        "operation": "is"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "685f1099361c9ed3b6f590be"
+                },
+                "else": {
+                  "type": "else",
+                  "target": "68600527b706c64bfa7657b9",
+                  "id": "685f1099361c9ed3b6f590bf",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          156.53,
+                          729.86
+                        ]
+                      },
+                      {
+                        "point": [
+                          304.68,
+                          729.86
+                        ]
+                      },
+                      {
+                        "point": [
+                          304.68,
+                          95.3
+                        ]
+                      },
+                      {
+                        "point": [
+                          452.84,
+                          95.3
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "cmcfcbzsb01593b81i8y82j0q": {
+                  "id": "685f10e1361c9ed3b6f590c6",
+                  "target": "68602a1fb706c64bfa7659e1",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          156.53,
+                          675.61
+                        ]
+                      },
+                      {
+                        "point": [
+                          701.14,
+                          675.61
+                        ]
+                      },
+                      {
+                        "point": [
+                          701.14,
+                          29.1
+                        ]
+                      },
+                      {
+                        "point": [
+                          1245.74,
+                          29.1
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "685f1099361c9ed3b6f590bd"
+        },
+        "685f1099361c9ed3b6f590c0": {
+          "type": "block",
+          "data": {
+            "name": "Conditional Logic ",
+            "steps": [
+              "685f1099361c9ed3b6f590bd"
+            ],
+            "color": "#d081bb"
+          },
+          "nodeID": "685f1099361c9ed3b6f590c0",
+          "coords": [
+            -9.467981281544553,
+            596.360115167582
+          ]
+        },
+        "68600527b706c64bfa7657b9": {
+          "type": "agent",
+          "data": {
+            "name": "Untitled agent",
+            "agentID": "6860052d09b51378c94ac469",
+            "listenForOtherTriggers": true,
+            "exitEveryConversationalTurn": false,
+            "portsV2": {
+              "byKey": {
+                "6860058209b51378c94ac4ad": {
+                  "id": "68600583b706c64bfa7657c0",
+                  "target": "68600cf8b706c64bfa7657c9",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          784.84,
+                          214.3
+                        ]
+                      },
+                      {
+                        "point": [
+                          808.84,
+                          214.3
+                        ]
+                      },
+                      {
+                        "point": [
+                          808.84,
+                          331.3
+                        ]
+                      },
+                      {
+                        "point": [
+                          624.67,
+                          331.3
+                        ]
+                      },
+                      {
+                        "point": [
+                          624.67,
+                          377.44
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "6860058309b51378c94ac4ae": {
+                  "id": "68600583b706c64bfa7657c2",
+                  "target": "68602a1fb706c64bfa7659e1",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          784.84,
+                          266.3
+                        ]
+                      },
+                      {
+                        "point": [
+                          1015.29,
+                          266.3
+                        ]
+                      },
+                      {
+                        "point": [
+                          1015.29,
+                          29.1
+                        ]
+                      },
+                      {
+                        "point": [
+                          1245.74,
+                          29.1
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68600527b706c64bfa7657b9"
+        },
+        "68600527b706c64bfa7657ba": {
+          "type": "block",
+          "data": {
+            "name": "The Expert",
+            "steps": [
+              "68600527b706c64bfa7657b9"
+            ],
+            "color": "#5b9fd7"
+          },
+          "nodeID": "68600527b706c64bfa7657ba",
+          "coords": [
+            618.8367629758717,
+            16.29702028898149
+          ]
+        },
+        "686005beb706c64bfa7657c4": {
+          "type": "markup_text",
+          "data": {
+            "scale": 1,
+            "rotate": 0,
+            "content": [
+              {
+                "textAlign": "center",
+                "children": [
+                  {
+                    "text": "Phase 2"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 320.7138879033244,
+            "backgroundColor": {
+              "r": 197,
+              "g": 231,
+              "b": 246,
+              "a": 1
+            },
+            "name": "Block"
+          },
+          "nodeID": "686005beb706c64bfa7657c4",
+          "coords": [
+            455.4300058604208,
+            -50.69847659605669
+          ]
+        },
+        "68600cf8b706c64bfa7657c7": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "messageID": "68600cf809b51378c94ac6e1",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": null,
+                  "id": "68600cf8b706c64bfa7657c8"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68600cf8b706c64bfa7657c7"
+        },
+        "68600cf8b706c64bfa7657c9": {
+          "type": "block",
+          "data": {
+            "name": "END",
+            "steps": [
+              "68600cf8b706c64bfa7657c7",
+              "68600d36b706c64bfa7657d2"
+            ],
+            "color": ""
+          },
+          "nodeID": "68600cf8b706c64bfa7657c9",
+          "coords": [
+            624.6730345507724,
+            377.43992818586275
+          ]
+        },
+        "68600d36b706c64bfa7657d2": {
+          "type": "exit",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68600d36b706c64bfa7657d2"
+        },
+        "68602225b706c64bfa765907": {
+          "type": "agent",
+          "data": {
+            "name": "Untitled agent",
+            "agentID": "6860247d09b51378c94ad8a4",
+            "listenForOtherTriggers": true,
+            "exitEveryConversationalTurn": false,
+            "portsV2": {
+              "byKey": {
+                "68602b5b09b51378c94adc34": {
+                  "id": "68602b5bb706c64bfa7659f2",
+                  "target": "68602eb8b706c64bfa765a4b",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1580.16,
+                          535.98
+                        ]
+                      },
+                      {
+                        "point": [
+                          1604.16,
+                          535.98
+                        ]
+                      },
+                      {
+                        "point": [
+                          1604.16,
+                          583.42
+                        ]
+                      },
+                      {
+                        "point": [
+                          1424.29,
+                          583.42
+                        ]
+                      },
+                      {
+                        "point": [
+                          1424.29,
+                          607.42
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68602225b706c64bfa765907",
+          "coords": [
+            0,
+            0
+          ]
+        },
+        "68602225b706c64bfa765908": {
+          "type": "block",
+          "data": {
+            "name": "The Scheduler",
+            "steps": [
+              "68602225b706c64bfa765907"
+            ],
+            "color": "#5b9fd7"
+          },
+          "nodeID": "68602225b706c64bfa765908",
+          "coords": [
+            1414.1648709471986,
+            331.97551863966765
+          ]
+        },
+        "68602a1fb706c64bfa7659df": {
+          "type": "function",
+          "data": {
+            "inputMapping": {
+              "timezone": [
+                {
+                  "text": [
+                    "Europe/Amsterdam"
+                  ]
+                }
+              ]
+            },
+            "outputMapping": {
+              "timezone": "68602a3a09b51378c94adbb4",
+              "day_of_week": "68602a4209b51378c94adbb9",
+              "current_date": "68602a4809b51378c94adbc0"
+            },
+            "portsV2": {
+              "byKey": {
+                "__vf__default": {
+                  "type": "",
+                  "target": null,
+                  "id": "68602a1fb706c64bfa7659e0"
+                },
+                "68602a147d18db1e5aac877b": {
+                  "id": "68602a26b706c64bfa7659e8",
+                  "target": "68602225b706c64bfa765908",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1576.74,
+                          168.1
+                        ]
+                      },
+                      {
+                        "point": [
+                          1600.74,
+                          168.1
+                        ]
+                      },
+                      {
+                        "point": [
+                          1600.74,
+                          285.1
+                        ]
+                      },
+                      {
+                        "point": [
+                          1414.17,
+                          285.1
+                        ]
+                      },
+                      {
+                        "point": [
+                          1414.17,
+                          331.98
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "68602a147d18db1e5aac877c": {
+                  "id": "68602a26b706c64bfa7659e9",
+                  "target": "68602225b706c64bfa765908",
+                  "type": "",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1576.74,
+                          222.1
+                        ]
+                      },
+                      {
+                        "point": [
+                          1600.74,
+                          222.1
+                        ]
+                      },
+                      {
+                        "point": [
+                          1600.74,
+                          285.1
+                        ]
+                      },
+                      {
+                        "point": [
+                          1414.17,
+                          285.1
+                        ]
+                      },
+                      {
+                        "point": [
+                          1414.17,
+                          331.98
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "functionID": "68602a147d18db1e5aac877a",
+            "name": "Get current time"
+          },
+          "nodeID": "68602a1fb706c64bfa7659df"
+        },
+        "68602a1fb706c64bfa7659e1": {
+          "type": "block",
+          "data": {
+            "name": "Get current time",
+            "steps": [
+              "68602a1fb706c64bfa7659df"
+            ],
+            "color": "#d282ab"
+          },
+          "nodeID": "68602a1fb706c64bfa7659e1",
+          "coords": [
+            1410.737521179225,
+            2.103319705165226
+          ]
+        },
+        "68602aadb706c64bfa7659ef": {
+          "type": "markup_text",
+          "data": {
+            "scale": 0.9688819570430323,
+            "rotate": -0.00127961266462151,
+            "content": [
+              {
+                "textAlign": "center",
+                "children": [
+                  {
+                    "text": "Phase 3"
+                  }
+                ]
+              }
+            ],
+            "overrideWidth": 1019.1082673824136,
+            "backgroundColor": {
+              "r": 197,
+              "g": 231,
+              "b": 246,
+              "a": 1
+            },
+            "name": "Block"
+          },
+          "nodeID": "68602aadb706c64bfa7659ef",
+          "coords": [
+            1222.9913074649178,
+            -70.80894679902188
+          ]
+        },
+        "68602eb8b706c64bfa765a4b": {
+          "type": "block",
+          "data": {
+            "name": "Function",
+            "color": "#d282ad",
+            "steps": [
+              "68602eb8b706c64bfa765a59"
+            ]
+          },
+          "nodeID": "68602eb8b706c64bfa765a4b",
+          "coords": [
+            1424.286529336153,
+            607.4162822995697
+          ]
+        },
+        "68602eb8b706c64bfa765a4d": {
+          "type": "actions",
+          "data": {
+            "name": "Actions",
+            "steps": [
+              "68602eb8b706c64bfa765a63"
+            ]
+          },
+          "nodeID": "68602eb8b706c64bfa765a4d",
+          "coords": [
+            -1591.1263100110968,
+            517.198150966735
+          ]
+        },
+        "68602eb8b706c64bfa765a4f": {
+          "type": "actions",
+          "data": {
+            "name": "Actions",
+            "steps": [
+              "68602eb8b706c64bfa765a66"
+            ]
+          },
+          "nodeID": "68602eb8b706c64bfa765a4f",
+          "coords": [
+            -1591.1263100110968,
+            517.198150966735
+          ]
+        },
+        "68602eb8b706c64bfa765a51": {
+          "type": "actions",
+          "data": {
+            "name": "Actions",
+            "steps": [
+              "68602eb8b706c64bfa765a69"
+            ]
+          },
+          "nodeID": "68602eb8b706c64bfa765a51",
+          "coords": [
+            -1591.1263100110968,
+            517.198150966735
+          ]
+        },
+        "68602eb8b706c64bfa765a53": {
+          "type": "actions",
+          "data": {
+            "name": "Actions",
+            "steps": [
+              "68602eb8b706c64bfa765a6c"
+            ]
+          },
+          "nodeID": "68602eb8b706c64bfa765a53",
+          "coords": [
+            -1591.1263100110968,
+            517.198150966735
+          ]
+        },
+        "68602eb8b706c64bfa765a55": {
+          "type": "actions",
+          "data": {
+            "name": "Actions",
+            "steps": [
+              "68602eb8b706c64bfa765a6f"
+            ]
+          },
+          "nodeID": "68602eb8b706c64bfa765a55",
+          "coords": [
+            -1591.1263100110968,
+            517.198150966735
+          ]
+        },
+        "68602eb8b706c64bfa765a57": {
+          "type": "actions",
+          "data": {
+            "name": "Actions",
+            "steps": [
+              "68602eb8b706c64bfa765a72"
+            ]
+          },
+          "nodeID": "68602eb8b706c64bfa765a57",
+          "coords": [
+            -1591.1263100110968,
+            517.198150966735
+          ]
+        },
+        "68602eb8b706c64bfa765a59": {
+          "type": "function",
+          "data": {
+            "name": "Natural Language to ISO 8601 Converter",
+            "functionID": "68600f1709b51378c94ac89d",
+            "inputMapping": {
+              "userInput": [
+                {
+                  "text": [
+                    "",
+                    {
+                      "variableID": "6860346c09b51378c94adfa1"
+                    },
+                    ""
+                  ]
+                }
+              ],
+              "timezone": [
+                {
+                  "text": [
+                    "+02:00"
+                  ]
+                }
+              ]
+            },
+            "outputMapping": {
+              "ISO_8601": "6860107009b51378c94ac937",
+              "iso8601DateTime": "6860107009b51378c94ac937"
+            },
+            "portsV2": {
+              "byKey": {
+                "__vf__default": {
+                  "type": "",
+                  "target": null,
+                  "id": "68602eb8b706c64bfa765a5a"
+                },
+                "68600f9609b51378c94ac8ce": {
+                  "type": "",
+                  "target": "68602f69b706c64bfa765ab1",
+                  "id": "68602eb8b706c64bfa765a5b",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1590.29,
+                          774.92
+                        ]
+                      },
+                      {
+                        "point": [
+                          1736.9,
+                          774.92
+                        ]
+                      },
+                      {
+                        "point": [
+                          1736.9,
+                          747.7
+                        ]
+                      },
+                      {
+                        "point": [
+                          1883.52,
+                          747.7
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "6860184f09b51378c94ad052": {
+                  "type": "",
+                  "target": "68602eb8b706c64bfa765a4d",
+                  "id": "68602eb8b706c64bfa765a5c",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1327.703689988903,
+                          848.258150966735
+                        ]
+                      },
+                      {
+                        "point": [
+                          1499.433689988903,
+                          848.258150966735
+                        ]
+                      },
+                      {
+                        "point": [
+                          1499.433689988903,
+                          917.4381509667351
+                        ]
+                      },
+                      {
+                        "point": [
+                          1671.1636899889031,
+                          917.4381509667351
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "6860185a09b51378c94ad059": {
+                  "type": "",
+                  "target": "68602eb8b706c64bfa765a4f",
+                  "id": "68602eb8b706c64bfa765a5d",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1327.703689988903,
+                          937.258150966735
+                        ]
+                      },
+                      {
+                        "point": [
+                          1501.3336899889032,
+                          937.258150966735
+                        ]
+                      },
+                      {
+                        "point": [
+                          1501.3336899889032,
+                          1054.938150966735
+                        ]
+                      },
+                      {
+                        "point": [
+                          1674.953689988903,
+                          1054.938150966735
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "6860186109b51378c94ad060": {
+                  "type": "",
+                  "target": "68602eb8b706c64bfa765a51",
+                  "id": "68602eb8b706c64bfa765a5e",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1327.703689988903,
+                          1026.258150966735
+                        ]
+                      },
+                      {
+                        "point": [
+                          1503.6436899889031,
+                          1026.258150966735
+                        ]
+                      },
+                      {
+                        "point": [
+                          1503.6436899889031,
+                          1192.448150966735
+                        ]
+                      },
+                      {
+                        "point": [
+                          1679.5836899889032,
+                          1192.448150966735
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                },
+                "6860186a09b51378c94ad067": {
+                  "type": "",
+                  "target": "68602eb8b706c64bfa765a53",
+                  "id": "68602eb8b706c64bfa765a5f",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1327.703689988903,
+                          1115.258150966735
+                        ]
+                      },
+                      {
+                        "point": [
+                          1502.1636899889031,
+                          1115.258150966735
+                        ]
+                      },
+                      {
+                        "point": [
+                          1502.1636899889031,
+                          1279.188150966735
+                        ]
+                      },
+                      {
+                        "point": [
+                          1676.6236899889032,
+                          1279.188150966735
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "6860187309b51378c94ad06e": {
+                  "type": "",
+                  "target": "68602eb8b706c64bfa765a55",
+                  "id": "68602eb8b706c64bfa765a60",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1327.703689988903,
+                          1204.258150966735
+                        ]
+                      },
+                      {
+                        "point": [
+                          1509.0636899889032,
+                          1204.258150966735
+                        ]
+                      },
+                      {
+                        "point": [
+                          1509.0636899889032,
+                          1411.728150966735
+                        ]
+                      },
+                      {
+                        "point": [
+                          1690.4236899889033,
+                          1411.728150966735
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "6860194509b51378c94ad1c8": {
+                  "type": "",
+                  "target": "68602eb8b706c64bfa765a57",
+                  "id": "68602eb8b706c64bfa765a61",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1327.703689988903,
+                          1293.258150966735
+                        ]
+                      },
+                      {
+                        "point": [
+                          1506.6936899889033,
+                          1293.258150966735
+                        ]
+                      },
+                      {
+                        "point": [
+                          1506.6936899889033,
+                          1603.3481509667351
+                        ]
+                      },
+                      {
+                        "point": [
+                          1685.6736899889033,
+                          1603.3481509667351
+                        ],
+                        "allowedToTop": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68602eb8b706c64bfa765a59"
+        },
+        "68602eb8b706c64bfa765a63": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cmcgjp2z908jk3b7tuyu9gltv",
+                "type": "value",
+                "label": null,
+                "value": [
+                  {
+                    "text": [
+                      "error"
+                    ]
+                  }
+                ],
+                "variableID": "6860107009b51378c94ac937"
+              }
+            ],
+            "label": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68602225b706c64bfa765908",
+                  "id": "68602eb8b706c64bfa765a64",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1029.54,
+                          863.92
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          1005.54,
+                          863.92
+                        ]
+                      },
+                      {
+                        "point": [
+                          1005.54,
+                          358.98
+                        ]
+                      },
+                      {
+                        "point": [
+                          1249.16,
+                          358.98
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68602eb8b706c64bfa765a63"
+        },
+        "68602eb8b706c64bfa765a66": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cmcgjpxvs08lw3b7twpa8qoba",
+                "type": "value",
+                "label": null,
+                "value": [
+                  {
+                    "text": [
+                      "ambiguous"
+                    ]
+                  }
+                ],
+                "variableID": "6860107009b51378c94ac937"
+              }
+            ],
+            "label": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68602225b706c64bfa765908",
+                  "id": "68602eb8b706c64bfa765a67",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          991.37,
+                          952.92
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          967.37,
+                          952.92
+                        ]
+                      },
+                      {
+                        "point": [
+                          967.37,
+                          358.98
+                        ]
+                      },
+                      {
+                        "point": [
+                          1249.16,
+                          358.98
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68602eb8b706c64bfa765a66"
+        },
+        "68602eb8b706c64bfa765a69": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cmcgjqvrk08ns3b7t80tt0n7s",
+                "type": "value",
+                "label": null,
+                "value": [
+                  {
+                    "text": [
+                      "no_time_specified"
+                    ]
+                  }
+                ],
+                "variableID": null
+              }
+            ],
+            "label": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68602225b706c64bfa765908",
+                  "id": "68602eb8b706c64bfa765a6a",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          982.29,
+                          1041.92
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          958.29,
+                          1041.92
+                        ]
+                      },
+                      {
+                        "point": [
+                          958.29,
+                          358.98
+                        ]
+                      },
+                      {
+                        "point": [
+                          1249.16,
+                          358.98
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68602eb8b706c64bfa765a69"
+        },
+        "68602eb8b706c64bfa765a6c": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cmcgjrc7u08oj3b7thhkcd86u",
+                "type": "value",
+                "label": null,
+                "value": [
+                  {
+                    "text": [
+                      "invalid_time"
+                    ]
+                  }
+                ],
+                "variableID": "6860107009b51378c94ac937"
+              }
+            ],
+            "label": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68602225b706c64bfa765908",
+                  "id": "68602eb8b706c64bfa765a6d",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          986.89,
+                          1130.92
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          962.89,
+                          1130.92
+                        ]
+                      },
+                      {
+                        "point": [
+                          962.89,
+                          358.98
+                        ]
+                      },
+                      {
+                        "point": [
+                          1249.16,
+                          358.98
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68602eb8b706c64bfa765a6c"
+        },
+        "68602eb8b706c64bfa765a6f": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cmcgjs19808q23b7tuzr96tb9",
+                "type": "value",
+                "label": null,
+                "value": [
+                  {
+                    "text": [
+                      "past_date"
+                    ]
+                  }
+                ],
+                "variableID": "6860107009b51378c94ac937"
+              }
+            ],
+            "label": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68602225b706c64bfa765908",
+                  "id": "68602eb8b706c64bfa765a70",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          999.69,
+                          1219.92
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          975.69,
+                          1219.92
+                        ]
+                      },
+                      {
+                        "point": [
+                          975.69,
+                          358.98
+                        ]
+                      },
+                      {
+                        "point": [
+                          1249.16,
+                          358.98
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68602eb8b706c64bfa765a6f"
+        },
+        "68602eb8b706c64bfa765a72": {
+          "type": "set-v3",
+          "data": {
+            "name": "",
+            "items": [
+              {
+                "id": "cmcgjsdvf08qt3b7t526poi2a",
+                "type": "value",
+                "label": null,
+                "value": [
+                  {
+                    "text": [
+                      "requires_clarification"
+                    ]
+                  }
+                ],
+                "variableID": "6860107009b51378c94ac937"
+              }
+            ],
+            "label": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68602225b706c64bfa765908",
+                  "id": "68602eb8b706c64bfa765a73",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          982.29,
+                          1308.92
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          958.29,
+                          1308.92
+                        ]
+                      },
+                      {
+                        "point": [
+                          958.29,
+                          358.98
+                        ]
+                      },
+                      {
+                        "point": [
+                          1249.16,
+                          358.98
+                        ],
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "68602eb8b706c64bfa765a72"
+        },
+        "68602f69b706c64bfa765ab1": {
+          "type": "api-v2",
+          "data": {
+            "name": "",
+            "url": [
+              {
+                "text": [
+                  "WEBHOOK URL"
+                ]
+              }
+            ],
+            "headers": [],
+            "httpMethod": "post",
+            "queryParameters": [],
+            "responseMappings": [],
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "68603491b706c64bfa765ac3",
+                  "id": "68602f69b706c64bfa765ab2",
+                  "data": {
+                    "points": [
+                      {
+                        "point": [
+                          1883.52,
+                          764.2
+                        ],
+                        "reversed": true
+                      },
+                      {
+                        "point": [
+                          1859.52,
+                          764.2
+                        ]
+                      },
+                      {
+                        "point": [
+                          1859.52,
+                          843.7
+                        ]
+                      },
+                      {
+                        "point": [
+                          2048.89,
+                          843.7
+                        ]
+                      },
+                      {
+                        "point": [
+                          2048.89,
+                          873.7
+                        ],
+                        "toTop": true,
+                        "allowedToTop": true
+                      }
+                    ]
+                  }
+                },
+                "fail": {
+                  "type": "fail",
+                  "target": null,
+                  "id": "68602f69b706c64bfa765ab3"
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "body": {
+              "type": "form-data",
+              "formData": [
+                {
+                  "id": "cmcglxcl80al23b7txfbzul4o",
+                  "key": "urgency level",
+                  "value": [
+                    {
+                      "text": [
+                        "",
+                        {
+                          "variableID": "685f0fe609b51378c94a7291"
+                        },
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "cmcglwudy0akv3b7tn2s4unaj",
+                  "key": "preferredDate",
+                  "value": [
+                    {
+                      "text": [
+                        "",
+                        {
+                          "variableID": "6860107009b51378c94ac937"
+                        },
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "cmcglujbf0ajo3b7t8tjij1cg",
+                  "key": "service needed",
+                  "value": [
+                    {
+                      "text": [
+                        "",
+                        {
+                          "variableID": "685f0fb309b51378c94a728f"
+                        },
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "cmcgltu9v0aio3b7ti3gzqn1c",
+                  "key": "caller name",
+                  "value": [
+                    {
+                      "text": [
+                        "",
+                        {
+                          "variableID": "685f0fa009b51378c94a728d"
+                        },
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "cmcgltlza0aii3b7tm0eobgft",
+                  "key": "phonenr",
+                  "value": [
+                    {
+                      "text": [
+                        "",
+                        {
+                          "variableID": "user_id"
+                        },
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "nodeID": "68602f69b706c64bfa765ab1"
+        },
+        "68602f69b706c64bfa765ab4": {
+          "type": "block",
+          "data": {
+            "name": "New Block 12",
+            "steps": [
+              "68602f69b706c64bfa765ab1"
+            ],
+            "color": "#d181b8"
+          },
+          "nodeID": "68602f69b706c64bfa765ab4",
+          "coords": [
+            2049.517102721803,
+            668.7041907991921
+          ]
+        },
+        "68603491b706c64bfa765ac1": {
+          "type": "message",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {
+                "next": {
+                  "type": "next",
+                  "target": "686034c5b706c64bfa765acd",
+                  "id": "68603491b706c64bfa765ac2",
+                  "data": {}
+                }
+              },
+              "builtIn": {},
+              "dynamic": []
+            },
+            "messageID": "686034ab09b51378c94adfd3"
+          },
+          "nodeID": "68603491b706c64bfa765ac1"
+        },
+        "68603491b706c64bfa765ac3": {
+          "type": "block",
+          "data": {
+            "name": "End",
+            "steps": [
+              "68603491b706c64bfa765ac1"
+            ],
+            "color": ""
+          },
+          "nodeID": "68603491b706c64bfa765ac3",
+          "coords": [
+            2048.8891295025014,
+            873.696897146433
+          ]
+        },
+        "686034c5b706c64bfa765acc": {
+          "type": "exit",
+          "data": {
+            "name": "",
+            "portsV2": {
+              "byKey": {},
+              "builtIn": {},
+              "dynamic": []
+            }
+          },
+          "nodeID": "686034c5b706c64bfa765acc"
+        },
+        "686034c5b706c64bfa765acd": {
+          "type": "actions",
+          "data": {
+            "name": "",
+            "steps": [
+              "686034c5b706c64bfa765acc"
+            ]
+          },
+          "nodeID": "686034c5b706c64bfa765acd",
+          "coords": [
+            0,
+            0
+          ]
+        }
+      },
+      "offsetX": 510.4665597329745,
+      "offsetY": 218.46118572075682,
+      "modified": 1701833501,
+      "creatorID": 1069714,
+      "variables": [],
+      "menuItems": [
+        {
+          "type": "NODE",
+          "sourceID": "start00000000000000000000"
+        }
+      ],
+      "menuNodeIDs": [],
+      "intentStepIDs": [],
+      "_id": "685d72879036e9e5b9069275",
+      "diagramID": "64dbb6696a8fab0013dba194",
+      "versionID": "685d72879036e9e5b9069272"
+    }
+  },
+  "flows": [],
+  "entities": [],
+  "entityVariants": [],
+  "intents": [
+    {
+      "id": "None",
+      "name": "None",
+      "createdByID": 1069714,
+      "folderID": null,
+      "description": null,
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-06-26T16:17:11.000Z",
+      "updatedAt": "2025-06-26T16:17:11.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedd9f",
+      "name": "No",
+      "createdByID": 1069714,
+      "folderID": null,
+      "description": "Trigger this intent then the user responds negatively",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-06-26T16:17:11.000Z",
+      "updatedAt": "2025-06-26T16:17:11.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd1",
+      "name": "Yes",
+      "createdByID": 1069714,
+      "folderID": null,
+      "description": "Trigger this intent when the user responds positively.",
+      "automaticReprompt": false,
+      "entityOrder": [],
+      "automaticRepromptSettings": null,
+      "createdAt": "2025-06-26T16:17:11.000Z",
+      "updatedAt": "2025-06-26T16:17:11.000Z",
+      "updatedByID": 1069714
+    }
+  ],
+  "utterances": [
+    {
+      "id": "6797c2110cfd6c00ccbedda0",
+      "text": [
+        {
+          "text": [
+            "I'm good"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda1",
+      "text": [
+        {
+          "text": [
+            "Nope"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda2",
+      "text": [
+        {
+          "text": [
+            "I think I'm good thanks"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda3",
+      "text": [
+        {
+          "text": [
+            "Definitely not"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda4",
+      "text": [
+        {
+          "text": [
+            "Nope"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda5",
+      "text": [
+        {
+          "text": [
+            "Under no circumstances"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda6",
+      "text": [
+        {
+          "text": [
+            "Not at all"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda7",
+      "text": [
+        {
+          "text": [
+            "Nope, not at all"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda8",
+      "text": [
+        {
+          "text": [
+            "No way"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbedda9",
+      "text": [
+        {
+          "text": [
+            "By no means"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddaa",
+      "text": [
+        {
+          "text": [
+            "Not in the slightest"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddab",
+      "text": [
+        {
+          "text": [
+            "No chance"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddac",
+      "text": [
+        {
+          "text": [
+            "Absolutely not"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddad",
+      "text": [
+        {
+          "text": [
+            "Not at all"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddae",
+      "text": [
+        {
+          "text": [
+            "Negative"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddaf",
+      "text": [
+        {
+          "text": [
+            "Sorry, no"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb0",
+      "text": [
+        {
+          "text": [
+            "Definitely not"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb1",
+      "text": [
+        {
+          "text": [
+            "That's wrong"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb2",
+      "text": [
+        {
+          "text": [
+            "Incorrect"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb3",
+      "text": [
+        {
+          "text": [
+            "Nope"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2110cfd6c00ccbeddb4",
+      "text": [
+        {
+          "text": [
+            "No"
+          ]
+        }
+      ],
+      "intentID": "6797c2110cfd6c00ccbedd9f",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd2",
+      "text": [
+        {
+          "text": [
+            "Definitely"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd3",
+      "text": [
+        {
+          "text": [
+            "Indeed"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd4",
+      "text": [
+        {
+          "text": [
+            "Of course"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd5",
+      "text": [
+        {
+          "text": [
+            "Certainly"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd6",
+      "text": [
+        {
+          "text": [
+            "Without question"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd7",
+      "text": [
+        {
+          "text": [
+            "Sure"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd8",
+      "text": [
+        {
+          "text": [
+            "Definitely"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddd9",
+      "text": [
+        {
+          "text": [
+            "You bet"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddda",
+      "text": [
+        {
+          "text": [
+            "Without a doubt"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddb",
+      "text": [
+        {
+          "text": [
+            "By all means"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddc",
+      "text": [
+        {
+          "text": [
+            "Agreed"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddd",
+      "text": [
+        {
+          "text": [
+            "Absolutely"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbeddde",
+      "text": [
+        {
+          "text": [
+            "That's correct"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedddf",
+      "text": [
+        {
+          "text": [
+            "Indeed"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedde0",
+      "text": [
+        {
+          "text": [
+            "Affirmative"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c2660cfd6c00ccbedde1",
+      "text": [
+        {
+          "text": [
+            "You are right"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c3060cfd6c00ccbede5c",
+      "text": [
+        {
+          "text": [
+            "Correct"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c3080cfd6c00ccbede5d",
+      "text": [
+        {
+          "text": [
+            "Yep"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    },
+    {
+      "id": "6797c3090cfd6c00ccbede5e",
+      "text": [
+        {
+          "text": [
+            "Yes"
+          ]
+        }
+      ],
+      "intentID": "6797c2660cfd6c00ccbeddd1",
+      "language": "en-us",
+      "createdAt": "2025-06-26T16:17:11.000Z"
+    }
+  ],
+  "requiredEntities": [],
+  "folders": [],
+  "responses": [
+    {
+      "id": "685f03c520a7778036ab75ef",
+      "name": "",
+      "createdByID": 1069714,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-06-27T20:49:10.000Z",
+      "updatedAt": "2025-06-27T20:50:04.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "68600cf809b51378c94ac6e1",
+      "name": "",
+      "createdByID": 1069714,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-06-28T15:40:41.000Z",
+      "updatedAt": "2025-06-28T15:40:44.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "68602e1309b51378c94add62",
+      "name": "",
+      "createdByID": 1069714,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-06-28T18:01:56.000Z",
+      "updatedAt": "2025-06-28T18:02:01.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "686010d809b51378c94ac9af",
+      "name": "",
+      "createdByID": 1069714,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-06-28T15:57:13.000Z",
+      "updatedAt": "2025-06-28T15:57:17.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "686018ab09b51378c94ad10c",
+      "name": "",
+      "createdByID": 1069714,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-06-28T16:30:36.000Z",
+      "updatedAt": "2025-06-28T16:30:39.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "686034ab09b51378c94adfd3",
+      "name": "",
+      "createdByID": 1069714,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-06-28T18:30:03.000Z",
+      "updatedAt": "2025-06-28T18:30:06.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "6860198509b51378c94ad1e7",
+      "name": "",
+      "createdByID": 1069714,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-06-28T16:34:13.000Z",
+      "updatedAt": "2025-06-28T16:34:25.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "68601b3309b51378c94ad32a",
+      "name": "",
+      "createdByID": 1069714,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-06-28T16:41:24.000Z",
+      "updatedAt": "2025-06-28T16:41:28.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "68601b9409b51378c94ad391",
+      "name": "",
+      "createdByID": 1069714,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-06-28T16:43:00.000Z",
+      "updatedAt": "2025-06-28T16:43:03.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "68601bf709b51378c94ad3ff",
+      "name": "",
+      "createdByID": 1069714,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-06-28T16:44:39.000Z",
+      "updatedAt": "2025-06-28T16:44:42.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "68601b8609b51378c94ad383",
+      "name": "",
+      "createdByID": 1069714,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-06-28T16:42:47.000Z",
+      "updatedAt": "2025-06-28T16:42:49.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "68601b9c09b51378c94ad39b",
+      "name": "",
+      "createdByID": 1069714,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-06-28T16:43:09.000Z",
+      "updatedAt": "2025-06-28T16:43:15.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "68601c0109b51378c94ad42d",
+      "name": "",
+      "createdByID": 1069714,
+      "folderID": null,
+      "type": "message",
+      "draft": false,
+      "createdAt": "2025-06-28T16:44:50.000Z",
+      "updatedAt": "2025-06-28T16:44:53.000Z",
+      "updatedByID": 1069714
+    }
+  ],
+  "responseMessages": [
+    {
+      "id": "685f03c520a7778036ab75f1",
+      "discriminatorID": "685f03c520a7778036ab75f0",
+      "text": [
+        {
+          "text": [
+            "Hello, thank you for calling Silverbrook Home Services! This is Sarah, your virtual assistant. How can I help you today?"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-06-27T20:49:10.000Z"
+    },
+    {
+      "id": "686018ab09b51378c94ad10e",
+      "discriminatorID": "686018ab09b51378c94ad10d",
+      "text": [
+        {
+          "text": [
+            "no time"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-06-28T16:30:36.000Z"
+    },
+    {
+      "id": "68600cf809b51378c94ac6e3",
+      "discriminatorID": "68600cf809b51378c94ac6e2",
+      "text": [
+        {
+          "text": [
+            "Perfect ",
+            {
+              "variableID": "685f0fa009b51378c94a728d"
+            },
+            "! If you need anything else or decide to schedule service, just give us a call back. Thanks for choosing Silverbrook Home Services!"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-06-28T15:40:41.000Z"
+    },
+    {
+      "id": "6860198509b51378c94ad1e9",
+      "discriminatorID": "6860198509b51378c94ad1e8",
+      "text": [
+        {
+          "text": [
+            "Succes:"
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "",
+            {
+              "variableID": "6860107009b51378c94ac937"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-06-28T16:34:13.000Z"
+    },
+    {
+      "id": "686010d809b51378c94ac9b1",
+      "discriminatorID": "686010d809b51378c94ac9b0",
+      "text": [
+        {
+          "text": [
+            "",
+            {
+              "variableID": "6860107009b51378c94ac937"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-06-28T15:57:13.000Z"
+    },
+    {
+      "id": "68601b9409b51378c94ad393",
+      "discriminatorID": "68601b9409b51378c94ad392",
+      "text": [
+        {
+          "text": [
+            "no_time_specified"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-06-28T16:43:00.000Z"
+    },
+    {
+      "id": "68601b3309b51378c94ad32c",
+      "discriminatorID": "68601b3309b51378c94ad32b",
+      "text": [
+        {
+          "text": [
+            "error"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-06-28T16:41:24.000Z"
+    },
+    {
+      "id": "68601b8609b51378c94ad385",
+      "discriminatorID": "68601b8609b51378c94ad384",
+      "text": [
+        {
+          "text": [
+            "ambiguous"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-06-28T16:42:47.000Z"
+    },
+    {
+      "id": "68601b9c09b51378c94ad39d",
+      "discriminatorID": "68601b9c09b51378c94ad39c",
+      "text": [
+        {
+          "text": [
+            "invalid_time"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-06-28T16:43:09.000Z"
+    },
+    {
+      "id": "68601c0109b51378c94ad42f",
+      "discriminatorID": "68601c0109b51378c94ad42e",
+      "text": [
+        {
+          "text": [
+            "requires_clarification"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-06-28T16:44:50.000Z"
+    },
+    {
+      "id": "68601bf709b51378c94ad401",
+      "discriminatorID": "68601bf709b51378c94ad400",
+      "text": [
+        {
+          "text": [
+            "past_date"
+          ]
+        },
+        {
+          "text": [
+            {
+              "text": [
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "text": [
+            "",
+            {
+              "variableID": "6860107009b51378c94ac937"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-06-28T16:44:39.000Z"
+    },
+    {
+      "id": "686034ab09b51378c94adfd5",
+      "discriminatorID": "686034ab09b51378c94adfd4",
+      "text": [
+        {
+          "text": [
+            "Perfect ",
+            {
+              "variableID": "685f0fa009b51378c94a728d"
+            },
+            "! I've got you scheduled for ",
+            {
+              "variableID": "6860346c09b51378c94adfa1"
+            },
+            ". You'll receive a confirmation shortly with all the details. Have a nice day, bye"
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-06-28T18:30:03.000Z"
+    },
+    {
+      "id": "68602e1309b51378c94add64",
+      "discriminatorID": "68602e1309b51378c94add63",
+      "text": [
+        {
+          "text": [
+            "",
+            {
+              "variableID": "6860107009b51378c94ac937"
+            },
+            " "
+          ]
+        }
+      ],
+      "condition": null,
+      "delay": null,
+      "createdAt": "2025-06-28T18:01:56.000Z"
+    }
+  ],
+  "responseDiscriminators": [
+    {
+      "id": "685f03c520a7778036ab75f0",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "685f03c520a7778036ab75ef",
+      "variantOrder": [
+        "685f03c520a7778036ab75f1"
+      ],
+      "createdAt": "2025-06-27T20:49:10.000Z"
+    },
+    {
+      "id": "68600cf809b51378c94ac6e2",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68600cf809b51378c94ac6e1",
+      "variantOrder": [
+        "68600cf809b51378c94ac6e3"
+      ],
+      "createdAt": "2025-06-28T15:40:41.000Z"
+    },
+    {
+      "id": "686010d809b51378c94ac9b0",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686010d809b51378c94ac9af",
+      "variantOrder": [
+        "686010d809b51378c94ac9b1"
+      ],
+      "createdAt": "2025-06-28T15:57:13.000Z"
+    },
+    {
+      "id": "686018ab09b51378c94ad10d",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686018ab09b51378c94ad10c",
+      "variantOrder": [
+        "686018ab09b51378c94ad10e"
+      ],
+      "createdAt": "2025-06-28T16:30:36.000Z"
+    },
+    {
+      "id": "6860198509b51378c94ad1e8",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "6860198509b51378c94ad1e7",
+      "variantOrder": [
+        "6860198509b51378c94ad1e9"
+      ],
+      "createdAt": "2025-06-28T16:34:13.000Z"
+    },
+    {
+      "id": "68601b3309b51378c94ad32b",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68601b3309b51378c94ad32a",
+      "variantOrder": [
+        "68601b3309b51378c94ad32c"
+      ],
+      "createdAt": "2025-06-28T16:41:24.000Z"
+    },
+    {
+      "id": "68601b9409b51378c94ad392",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68601b9409b51378c94ad391",
+      "variantOrder": [
+        "68601b9409b51378c94ad393"
+      ],
+      "createdAt": "2025-06-28T16:43:00.000Z"
+    },
+    {
+      "id": "68601bf709b51378c94ad400",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68601bf709b51378c94ad3ff",
+      "variantOrder": [
+        "68601bf709b51378c94ad401"
+      ],
+      "createdAt": "2025-06-28T16:44:39.000Z"
+    },
+    {
+      "id": "68601b8609b51378c94ad384",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68601b8609b51378c94ad383",
+      "variantOrder": [
+        "68601b8609b51378c94ad385"
+      ],
+      "createdAt": "2025-06-28T16:42:47.000Z"
+    },
+    {
+      "id": "68601b9c09b51378c94ad39c",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68601b9c09b51378c94ad39b",
+      "variantOrder": [
+        "68601b9c09b51378c94ad39d"
+      ],
+      "createdAt": "2025-06-28T16:43:09.000Z"
+    },
+    {
+      "id": "68601c0109b51378c94ad42e",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68601c0109b51378c94ad42d",
+      "variantOrder": [
+        "68601c0109b51378c94ad42f"
+      ],
+      "createdAt": "2025-06-28T16:44:50.000Z"
+    },
+    {
+      "id": "68602e1309b51378c94add63",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "68602e1309b51378c94add62",
+      "variantOrder": [
+        "68602e1309b51378c94add64"
+      ],
+      "createdAt": "2025-06-28T18:01:56.000Z"
+    },
+    {
+      "id": "686034ab09b51378c94adfd4",
+      "channel": "default",
+      "language": "en-us",
+      "responseID": "686034ab09b51378c94adfd3",
+      "variantOrder": [
+        "686034ab09b51378c94adfd5"
+      ],
+      "createdAt": "2025-06-28T18:30:03.000Z"
+    }
+  ],
+  "variables": [
+    {
+      "id": "686005fd09b51378c94ac4fc",
+      "name": "questionsAsked",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-06-28T15:10:54.000Z",
+      "updatedAt": "2025-06-28T15:10:54.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "68600c5b09b51378c94ac6bc",
+      "name": "informationProvided",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-06-28T15:38:04.000Z",
+      "updatedAt": "2025-06-28T15:38:04.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "6860107009b51378c94ac937",
+      "name": "ISO_Format",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-06-28T15:55:29.000Z",
+      "updatedAt": "2025-06-28T15:55:29.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "686010a609b51378c94ac982",
+      "name": "requested_time",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-06-28T15:56:23.000Z",
+      "updatedAt": "2025-06-28T15:56:23.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "68602a3a09b51378c94adbb4",
+      "name": "timezone",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-06-28T17:45:31.000Z",
+      "updatedAt": "2025-06-28T17:45:31.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "68602a4209b51378c94adbb9",
+      "name": "day_of_week",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-06-28T17:45:38.000Z",
+      "updatedAt": "2025-06-28T17:45:38.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "68602a4809b51378c94adbc0",
+      "name": "current_date",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-06-28T17:45:44.000Z",
+      "updatedAt": "2025-06-28T17:45:44.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "6860346c09b51378c94adfa1",
+      "name": "preferredDateTime",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-06-28T18:29:01.000Z",
+      "updatedAt": "2025-06-28T18:29:01.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "sessions",
+      "name": "sessions",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The number of times a particular user has opened the app.",
+      "defaultValue": null,
+      "createdAt": "2025-06-26T16:17:11.000Z",
+      "updatedAt": "2025-06-26T16:17:11.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "user_id",
+      "name": "user_id",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's unique ID.",
+      "defaultValue": null,
+      "createdAt": "2025-06-26T16:17:11.000Z",
+      "updatedAt": "2025-06-26T16:17:11.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "timestamp",
+      "name": "timestamp",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "UNIX timestamp (number of seconds since January 1st, 1970 at UTC).",
+      "defaultValue": null,
+      "createdAt": "2025-06-26T16:17:11.000Z",
+      "updatedAt": "2025-06-26T16:17:11.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "platform",
+      "name": "platform",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The platform your agent is running on (e.g. \"voiceflow\").",
+      "defaultValue": null,
+      "createdAt": "2025-06-26T16:17:11.000Z",
+      "updatedAt": "2025-06-26T16:17:11.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "locale",
+      "name": "locale",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The locale of the user (eg. en-US, en-CA, it-IT, fr-FR, ...).",
+      "defaultValue": null,
+      "createdAt": "2025-06-26T16:17:11.000Z",
+      "updatedAt": "2025-06-26T16:17:11.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "intent_confidence",
+      "name": "intent_confidence",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "number",
+      "description": "The confidence interval (measured as a value from 0 to 100) for the most recently matched intent.",
+      "defaultValue": null,
+      "createdAt": "2025-06-26T16:17:11.000Z",
+      "updatedAt": "2025-06-26T16:17:11.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "last_response",
+      "name": "last_response",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The agent's last response (text/speak) in a string.",
+      "defaultValue": null,
+      "createdAt": "2025-06-26T16:17:11.000Z",
+      "updatedAt": "2025-06-26T16:17:11.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "last_event",
+      "name": "last_event",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "any",
+      "description": "The object containing the last event that the user client has triggered.",
+      "defaultValue": null,
+      "createdAt": "2025-06-26T16:17:11.000Z",
+      "updatedAt": "2025-06-26T16:17:11.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "last_utterance",
+      "name": "last_utterance",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "The user's last utterance in a text string.",
+      "defaultValue": null,
+      "createdAt": "2025-06-26T16:17:11.000Z",
+      "updatedAt": "2025-06-26T16:17:11.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "vf_memory",
+      "name": "vf_memory",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": true,
+      "datatype": "text",
+      "description": "Last 10 user inputs and agent responses in a string (e.g. \"agent: How can i help?\"\nuser: What's the weather today?).",
+      "defaultValue": null,
+      "createdAt": "2025-06-26T16:17:11.000Z",
+      "updatedAt": "2025-06-26T16:17:11.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "685f0fa009b51378c94a728d",
+      "name": "callerName",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-06-27T21:39:44.000Z",
+      "updatedAt": "2025-06-27T21:39:44.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "685f0fb309b51378c94a728f",
+      "name": "serviceNeeded",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-06-27T21:40:03.000Z",
+      "updatedAt": "2025-06-27T21:40:03.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "685f0fe609b51378c94a7291",
+      "name": "urgencyLevel",
+      "createdByID": 1069714,
+      "folderID": null,
+      "color": "#515A63",
+      "isArray": false,
+      "isSystem": false,
+      "datatype": "any",
+      "description": "",
+      "defaultValue": null,
+      "createdAt": "2025-06-27T21:40:55.000Z",
+      "updatedAt": "2025-06-27T21:40:55.000Z",
+      "updatedByID": 1069714
+    }
+  ],
+  "workflows": [
+    {
+      "id": "66df755be937eb000784abb2",
+      "name": "Start workflow",
+      "createdByID": 1069714,
+      "folderID": null,
+      "status": null,
+      "isStart": true,
+      "diagramID": "64dbb6696a8fab0013dba194",
+      "assigneeID": null,
+      "description": "",
+      "createdAt": "2025-06-26T16:17:11.000Z",
+      "updatedAt": "2025-06-29T12:35:18.000Z",
+      "updatedByID": 1069714
+    }
+  ],
+  "attachments": [],
+  "cardButtons": [],
+  "prompts": [],
+  "promptMessages": [],
+  "events": [],
+  "agents": [
+    {
+      "id": "67db2b56cbe88befffef4623",
+      "name": "Customer support specialist",
+      "createdByID": 1069714,
+      "folderID": null,
+      "settings": {},
+      "description": "An agent template for resolving issues and ensuring customer satisfaction with technical skill and empathy.",
+      "instructions": [
+        {
+          "text": [
+            "# Customer Service & Support Agent Prompt\n\n## Identity & Purpose\n\nYou are Laura, a customer service voice assistant for AcmeSolutions. Your primary purpose is to help customers resolve issues with their products, answer questions about services, and ensure a satisfying support experience.\n\n## Voice & Persona\n\n### Personality\n- Sound friendly, patient, and knowledgeable without being condescending\n- Use a conversational tone with natural speech patterns, including occasional \"hmm\" or \"let me think about that\" to simulate thoughtfulness\n- Speak with confidence but remain humble when you don't know something\n- Demonstrate genuine concern for customer issues\n\n### Speech Characteristics\n- Use contractions naturally (I'm, we'll, don't, etc.)\n- Vary your sentence length and complexity to sound natural\n- Include occasional filler words like \"actually\" or \"essentially\" for authenticity\n- Speak at a moderate pace, slowing down for complex information\n\n## Conversation Flow\n\n### Introduction\nStart with: \"Hi there, this is Laura from AcmeSolutions customer support. How can I help you today?\"\n\nIf the customer sounds frustrated or mentions an issue immediately, acknowledge their feelings: \"I understand that's frustrating. I'm here to help get this sorted out for you.\"\n\n### Issue Identification\n1. Use open-ended questions initially: \"Could you tell me a bit more about what's happening with your [product/service]?\"\n2. Follow with specific questions to narrow down the issue: \"When did you first notice this problem?\" or \"Does this happen every time you use it?\"\n3. Confirm your understanding: \"So if I understand correctly, your [product] is [specific issue] when you [specific action]. Is that right?\"\n\n### Troubleshooting\n1. Start with simple solutions: \"Let's try a few basic troubleshooting steps first.\"\n2. Provide clear step-by-step instructions: \"First, I'd like you to... Next, could you...\"\n3. Check progress at each step: \"What are you seeing now on your screen?\"\n4. Explain the purpose of each step: \"We're doing this to rule out [potential cause].\"\n\n### Resolution\n1. For resolved issues: \"Great! I'm glad we were able to fix that issue. Is everything working as expected now?\"\n2. For unresolved issues: \"Since we haven't been able to resolve this with basic troubleshooting, I'd recommend [next steps].\"\n3. Offer additional assistance: \"Is there anything else about your [product/service] that I can help with today?\"\n\n### Closing\nEnd with: \"Thank you for contacting AcmeSolutions support. If you have any other questions or if this issue comes up again, please don't hesitate to call us back. Have a great day!\"\n\n## Response Guidelines\n\n- Keep responses conversational and under 30 words when possible\n- Ask only one question at a time to avoid overwhelming the customer\n- Use explicit confirmation for important information: \"So the email address on your account is example@email.com, is that correct?\"\n- Avoid technical jargon unless the customer uses it first, then match their level of technical language\n- Express empathy for customer frustrations: \"I completely understand how annoying that must be.\"\n\n## Scenario Handling\n\n### For Common Technical Issues\n1. Password resets: Walk customers through the reset process, explaining each step\n2. Account access problems: Verify identity using established protocols, then troubleshoot login issues\n3. Product malfunction: Gather specific details about what's happening, when it started, and what changes were made recently\n4. Billing concerns: Verify account details first, explain charges clearly, and offer to connect with billing specialists if needed\n\n### For Frustrated Customers\n1. Let them express their frustration without interruption\n2. Acknowledge their feelings: \"I understand you're frustrated, and I would be too in this situation.\"\n3. Take ownership: \"I'm going to personally help get this resolved for you.\"\n4. Focus on solutions rather than dwelling on the problem\n5. Provide clear timeframes for resolution\n\n### For Complex Issues\n1. Break down complex problems into manageable components\n2. Address each component individually\n3. Provide a clear explanation of the issue in simple terms\n4. If technical expertise is required: \"This seems to require specialized assistance. Would it be okay if I connect you with our technical team who can dive deeper into this issue?\"\n\n### For Feature/Information Requests\n1. Provide accurate, concise information about available features\n2. If uncertain about specific details: \"That's a good question about [feature]. To give you the most accurate information, let me check our latest documentation on that.\"\n3. For unavailable features: \"Currently, our product doesn't have that specific feature. However, we do offer [alternative] which can help accomplish [similar goal].\"\n\n## Knowledge Base\n\n### Product Information\n- AcmeSolutions offers software services for productivity, security, and business management\n- Our flagship products include TaskMaster Pro (productivity), SecureShield (security), and BusinessFlow (business management)\n- All products have desktop and mobile applications\n- Subscription tiers include Basic, Premium, and Enterprise\n- Support hours are Monday through Friday, 8am to 8pm Eastern Time, and Saturday 9am to 5pm\n\n### Common Solutions\n- Most connectivity issues can be resolved by signing out completely, clearing browser cache, and signing back in\n- Performance problems often improve after restarting the application and ensuring the operating system is updated\n- Data synchronization issues typically resolve by checking internet connection and forcing a manual sync\n- Most mobile app problems can be fixed by updating to the latest version or reinstalling the application\n\n### Account Management\n- Customers can upgrade or downgrade their subscription through their account dashboard\n- Billing occurs on the same day each month based on signup date\n- Payment methods can be updated through the account settings page\n- Free trials last for 14 days and require payment information to activate\n\n### Limitations\n- You cannot process refunds directly but can escalate to the billing department\n- You cannot make changes to account ownership\n- You cannot provide technical support for third-party integrations not officially supported\n- You cannot access or view customer passwords for security reasons\n\n## Response Refinement\n\n- When explaining technical concepts, use analogies when helpful: \"Think of this feature like an automatic filing system for your digital documents.\"\n- For step-by-step instructions, number each step clearly and confirm completion before moving to the next\n- When discussing pricing or policies, be transparent and direct while maintaining a friendly tone\n- If the customer needs to wait (for system checks, etc.), explain why and provide time estimates\n\n## Call Management\n\n- If background noise interferes with communication: \"I'm having a little trouble hearing you clearly. Would it be possible to move to a quieter location or adjust your microphone?\"\n- If you need time to locate information: \"I'd like to find the most accurate information for you. Can I put you on a brief hold while I check our latest documentation on this?\"\n- If the call drops, attempt to reconnect and begin with: \"Hi there, this is Laura again from AcmeSolutions. I apologize for the disconnection. Let's continue where we left off with [last topic].\"\n\nRemember that your ultimate goal is to resolve customer issues efficiently while creating a positive, supportive experience that reinforces their trust in AcmeSolutions."
+          ]
+        }
+      ],
+      "pathToolOrder": [],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": true,
+        "description": "Triggered the knowledge base when you don't know the answer to a question."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "createdAt": "2025-06-26T16:17:11.000Z",
+      "updatedAt": "2025-06-26T16:17:11.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "685f049820a7778036ab7656",
+      "name": "The Receptionist",
+      "createdByID": 1069714,
+      "folderID": null,
+      "settings": {
+        "model": "gpt-4.1-2025-04-14",
+        "maxTokens": 3748,
+        "temperature": 0.3
+      },
+      "description": "",
+      "instructions": [
+        {
+          "text": [
+            "You are Sarah, the professional virtual receptionist for Silverbrook Home Services. You handle all incoming phone calls with warmth and efficiency.\n\n**IMPORTANT: Check for Previous Input**\n- The caller may have already told us something: ",
+            {
+              "variableID": "last_utterance"
+            },
+            "\n- If last_utterance has content: Acknowledge what they said and continue from there\n- If last_utterance is empty: Start with normal greeting questions\n\n**Your Job:**\n1. Get the caller's name (if not already provided)\n2. Understand what they need help with (may already be in last_utterance)\n3. Determine if it's routine, urgent, or emergency\n4. Keep responses short and conversational - you're on the phone\n\n**Important Guidelines:**\n- Keep ALL responses under 20 words when possible\n- Never list multiple options - just ask what they need\n- Don't use numbered lists or bullet points (this is a phone call)\n- Sound natural and helpful, not robotic\n- Ask one question at a time\n- DON'T repeat questions if they already told you something\n\n**CRITICAL: Urgency Level Classification**\nYou MUST classify every call into exactly ONE of these three categories:\n- **\"emergency\"** - True emergencies (no power, gas leak, flood, electrical hazard)\n- **\"urgent\"** - Needs help today but not life-threatening (broken AC in summer, major leak)\n- **\"routine\"** - Can wait for normal scheduling (general questions, non-urgent repairs)\n\n**What to Collect:**\n- Their name (first name is fine)\n- What they need help with (check last_utterance first!)\n- How urgent it is (MUST be one of the three words above)\n\n**Conversation Flow Examples:**\n\n**If they already explained their need (last_utterance has content):**\n- \"Thanks for explaining about [their issue]. May I get your first name?\"\n- \"Got it, and is this something urgent or can it wait for regular business hours?\"\n\n**If last_utterance is empty:**\n- \"May I get your first name please?\"\n- \"What can we help you with today?\"\n- \"Is this something urgent or can it wait until regular business hours?\"\n\n**When you have their name and understand their need, use the CallInfoCaptured exit path.**\n\n**Remember:** You're on a phone call - be conversational, not formal. Acknowledge what they've already told you!"
+          ]
+        }
+      ],
+      "pathToolOrder": [
+        "685f0f3209b51378c94a7285"
+      ],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": false,
+        "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "createdAt": "2025-06-27T20:52:41.000Z",
+      "updatedAt": "2025-06-28T18:52:06.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "6860052d09b51378c94ac469",
+      "name": "The Expert",
+      "createdByID": 1069714,
+      "folderID": null,
+      "settings": {},
+      "description": "",
+      "instructions": [
+        {
+          "text": [
+            "You are the knowledgeable service specialist for Silverbrook Home Services. You handle routine inquiries and provide helpful information about our services.\n\n**Context You Already Know:**\n- Caller Name: ",
+            {
+              "variableID": "685f0fa009b51378c94a728d"
+            },
+            "\n- Their Need: ",
+            {
+              "variableID": "685f0fb309b51378c94a728f"
+            },
+            "\n- This is a routine (non-urgent) inquiry\n\n**Your Job:**\n1. Answer their questions about services, pricing, or processes\n2. Provide helpful information based on what they need\n3. Determine if they want to schedule an appointment\n4. Keep responses short and conversational - you're on the phone\n\n**Services Information:**\n- Electrical: $95/hour, $75 service call (waived with repair)\n- Plumbing: $85/hour, $75 service call (waived with repair)  \n- HVAC: $85/hour, seasonal tune-ups $149\n- Handyman: $85/hour\n- Emergency rate: $150/hour (evenings/weekends)\n\n**Business Hours:**\n- Monday-Friday: 7 AM - 6 PM\n- Saturday: 8 AM - 4 PM\n- Sunday: Emergency only\n- 24/7 emergency service available\n\n**Common Questions to Handle:**\n- Pricing and service costs\n- What's included in service calls\n- Business hours and availability\n- Types of services we offer\n- How long appointments take\n- What to expect during service\n\n**Important Guidelines:**\n- Keep responses under 30 words when possible\n- Be helpful and informative\n- Ask if they want to schedule after providing information\n- Don't overwhelm with too much detail\n- Sound friendly and professional\n\n**When they want to schedule an appointment, use the SchedulingRequested exit path.**\n**When their questions are answered and they don't need scheduling, use the InformationComplete exit path.**"
+          ]
+        }
+      ],
+      "pathToolOrder": [
+        "6860058209b51378c94ac4ad",
+        "6860058309b51378c94ac4ae"
+      ],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": true,
+        "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "createdAt": "2025-06-28T15:07:25.000Z",
+      "updatedAt": "2025-06-28T20:34:24.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "6860247d09b51378c94ad8a4",
+      "name": "The Scheduler",
+      "createdByID": 1069714,
+      "folderID": null,
+      "settings": {},
+      "description": "",
+      "instructions": [
+        {
+          "text": [
+            "You are the appointment coordinator for Silverbrook Home Services. Your job is to book appointments quickly and efficiently.\n\n**Context You Already Know:**\n- Caller Name: ",
+            {
+              "variableID": "685f0fa009b51378c94a728d"
+            },
+            "\n- Service Needed: ",
+            {
+              "variableID": "685f0fb309b51378c94a728f"
+            },
+            "\n- They want to schedule an appointment\n\n**CRITICAL: ALWAYS Check Previous Attempt Status**\n- ISO_Format variable contains: \"",
+            {
+              "variableID": "6860107009b51378c94ac937"
+            },
+            "\"\n- You MUST check this variable first before responding\n\n**Variable Check Logic:**\n- If ISO_Format is empty, blank, or null: This is their FIRST scheduling attempt\n- If ISO_Format contains ANY text/content: This is a RETRY - previous attempt failed\n\n**Your Response Based on ISO_Format:**\n\n**FIRST ATTEMPT (ISO_Format is empty):**\n- Start with: \"When would work best for you?\"\n- Get their preferred day and time\n\n**RETRY ATTEMPT (ISO_Format has content):**\n- Start with: \"Let me get a clearer time from you. When would work best?\"\n- Acknowledge there was an issue with their previous time choice\n- Ask for a more specific day and time\n\n**Your Job:**\n1. CHECK ISO_Format variable first\n2. Respond appropriately based on whether it's first attempt or retry\n3. Get a clear day and time that includes both specific day AND specific time\n4. Exit immediately once you have both\n\n**Business Hours for Scheduling:**\n- Monday-Friday: 7 AM - 6 PM\n- Saturday: 8 AM - 4 PM  \n- Sunday: Emergency only (no routine scheduling)\n\n**Time and Date Requirements:**\n- Must get BOTH day AND time clearly\n- Good examples: \"Tomorrow at 2 PM\", \"Next Friday at 9 AM\", \"Thursday at 3:30\"\n- Bad examples: \"Morning\", \"Next week\", \"Afternoon\" (too vague)\n\n**Important Guidelines:**\n- Keep responses short and friendly - you're on the phone\n- Always check ISO_Format variable before your first response\n- Don't ask for exact formats - natural language is fine\n- Once you have specific day + time, use AppointmentTimeCollected exit path\n\n**Current date for reference:** ",
+            {
+              "variableID": "68602a4809b51378c94adbc0"
+            },
+            "\n\n**Remember:** Always acknowledge if this is a retry attempt based on ISO_Format content!"
+          ]
+        }
+      ],
+      "pathToolOrder": [
+        "68602b5b09b51378c94adc34"
+      ],
+      "webSearchTool": null,
+      "knowledgeBaseTool": {
+        "enabled": false,
+        "description": "Searches an external knowledge base to retrieve relevant information, supplementing or replacing the language model's internal context."
+      },
+      "buttonTool": null,
+      "cardTool": null,
+      "carouselTool": null,
+      "createdAt": "2025-06-28T17:21:01.000Z",
+      "updatedAt": "2025-06-28T19:03:59.000Z",
+      "updatedByID": 1069714
+    }
+  ],
+  "agentAPITools": [],
+  "agentPathTools": [
+    {
+      "id": "685f0f3209b51378c94a7285",
+      "name": "CallInfoCaptured",
+      "agentID": "685f049820a7778036ab7656",
+      "description": "Use this path when you have successfully captured the caller's name, what they need help with, and assessed how urgent it is. You should have enough information to route them to the next step.",
+      "variableOrder": [
+        "685f0fa009b51378c94a728e",
+        "685f0fb309b51378c94a7290",
+        "685f0fe609b51378c94a7292"
+      ],
+      "createdAt": "2025-06-27T21:37:55.000Z"
+    },
+    {
+      "id": "6860058209b51378c94ac4ad",
+      "name": "InformationComplete",
+      "agentID": "6860052d09b51378c94ac469",
+      "description": "Use this path when you have answered all their questions and they don't need to schedule anything right now. They're satisfied with the information and ending the call.",
+      "variableOrder": [
+        "68600c3f09b51378c94ac6bb",
+        "68600c5c09b51378c94ac6bd"
+      ],
+      "createdAt": "2025-06-28T15:08:51.000Z"
+    },
+    {
+      "id": "6860058309b51378c94ac4ae",
+      "name": "SchedulingRequested",
+      "agentID": "6860052d09b51378c94ac469",
+      "description": "Use this path when the caller expresses interest in booking an appointment or scheduling service. Look for phrases like 'can I schedule', 'when are you available', 'I'd like to book', or 'let's set up an appointment'.",
+      "variableOrder": [
+        "686005fd09b51378c94ac4fd",
+        "68600c8809b51378c94ac6c6"
+      ],
+      "createdAt": "2025-06-28T15:08:51.000Z"
+    },
+    {
+      "id": "68602b5b09b51378c94adc34",
+      "name": "AppointmentTimeCollected",
+      "agentID": "6860247d09b51378c94ad8a4",
+      "description": "Trigger this path immediately when you have successfully captured a clear day and time preference from the caller. The preferredDateTime variable should contain both a specific day (like 'tomorrow', 'Friday', 'next Monday') and a specific time (like '2 PM', '9 AM', '3:30'). Exit as soon as you have this information.",
+      "variableOrder": [
+        "6860345e09b51378c94adfa0"
+      ],
+      "createdAt": "2025-06-28T17:50:20.000Z"
+    }
+  ],
+  "agentFunctionTools": [],
+  "agentIntegrationTools": [],
+  "agentPathToolVariables": [
+    {
+      "id": "685f0fa009b51378c94a728e",
+      "kind": "variable",
+      "entityID": null,
+      "variableID": "685f0fa009b51378c94a728d",
+      "description": "The caller's first name only. Keep it simple for phone conversations. Examples: 'Marcus', 'Sarah', 'Mike', 'Jennifer'. Don't ask for last names unless they volunteer it.",
+      "agentPathToolID": "685f0f3209b51378c94a7285",
+      "createdAt": "2025-06-27T21:39:44.000Z"
+    },
+    {
+      "id": "685f0fb309b51378c94a7290",
+      "kind": "variable",
+      "entityID": null,
+      "variableID": "685f0fb309b51378c94a728f",
+      "description": "What the caller needs help with in their own words. Be specific but concise. Examples: 'electrical outlet not working', 'leaky kitchen faucet', 'need handyman for TV mounting', 'HVAC making strange noise', 'emergency - no power in house'.",
+      "agentPathToolID": "685f0f3209b51378c94a7285",
+      "createdAt": "2025-06-27T21:40:03.000Z"
+    },
+    {
+      "id": "685f0fe609b51378c94a7292",
+      "kind": "variable",
+      "entityID": null,
+      "variableID": "685f0fe609b51378c94a7291",
+      "description": "This variable MUST contain exactly one of these three words only: 'emergency', 'urgent', or 'routine'. Nothing else. \n\n- Use 'emergency' for true emergencies (no power, gas leak, electrical hazard, flood)\n- Use 'urgent' for same-day needs that aren't life-threatening (broken AC, major leak, no heat)\n- Use 'routine' for everything else (general questions, non-urgent repairs, scheduling)\n\nExamples: 'emergency', 'urgent', 'routine' - NEVER use phrases like 'very urgent' or 'kind of routine'.",
+      "agentPathToolID": "685f0f3209b51378c94a7285",
+      "createdAt": "2025-06-27T21:40:55.000Z"
+    },
+    {
+      "id": "686005fd09b51378c94ac4fd",
+      "kind": "variable",
+      "entityID": null,
+      "variableID": "686005fd09b51378c94ac4fc",
+      "description": "What specific questions or information the caller asked about. Examples: 'asked about electrical outlet repair pricing', 'wanted to know business hours', 'asked what's included in service call', 'inquired about HVAC tune-up cost'.",
+      "agentPathToolID": "6860058309b51378c94ac4ae",
+      "createdAt": "2025-06-28T15:10:54.000Z"
+    },
+    {
+      "id": "68600c3f09b51378c94ac6bb",
+      "kind": "variable",
+      "entityID": null,
+      "variableID": "686005fd09b51378c94ac4fc",
+      "description": "What specific questions or information the caller asked about. Examples: 'asked about electrical outlet repair pricing', 'wanted to know business hours', 'asked what's included in service call', 'inquired about HVAC tune-up cost'.",
+      "agentPathToolID": "6860058209b51378c94ac4ad",
+      "createdAt": "2025-06-28T15:37:36.000Z"
+    },
+    {
+      "id": "68600c5c09b51378c94ac6bd",
+      "kind": "variable",
+      "entityID": null,
+      "variableID": "68600c5b09b51378c94ac6bc",
+      "description": "Summary of the information you provided to answer their questions. Examples: 'explained $95/hour electrical rate plus $75 service call', 'provided business hours and weekend availability', 'described what's included in HVAC tune-up service'.",
+      "agentPathToolID": "6860058209b51378c94ac4ad",
+      "createdAt": "2025-06-28T15:38:04.000Z"
+    },
+    {
+      "id": "68600c8809b51378c94ac6c6",
+      "kind": "variable",
+      "entityID": null,
+      "variableID": "68600c5b09b51378c94ac6bc",
+      "description": "Summary of the information you provided to answer their questions. Examples: 'explained $95/hour electrical rate plus $75 service call', 'provided business hours and weekend availability', 'described what's included in HVAC tune-up service'.",
+      "agentPathToolID": "6860058309b51378c94ac4ae",
+      "createdAt": "2025-06-28T15:38:49.000Z"
+    },
+    {
+      "id": "6860345e09b51378c94adfa0",
+      "kind": "variable",
+      "entityID": null,
+      "variableID": "6860346c09b51378c94adfa1",
+      "description": "he caller's preferred appointment day and time in natural, clear language that includes both day and time. Must be specific enough to understand exactly when they want to come in. Good examples: 'tomorrow at 2 PM', 'next Friday at 9 AM', 'Thursday afternoon at 3:30', 'Monday morning at 10'. Bad examples: 'morning', 'next week', 'afternoon' (too vague).",
+      "agentPathToolID": "68602b5b09b51378c94adc34",
+      "createdAt": "2025-06-28T18:28:47.000Z"
+    }
+  ],
+  "apiTools": [],
+  "apiToolInputVariables": [],
+  "integrationTools": [],
+  "functions": [
+    {
+      "id": "68611d837d18db1e5ab3c416",
+      "name": "Natural Language to ISO 8601 Converter",
+      "createdByID": 1069714,
+      "folderID": null,
+      "code": "export default async function main(args) {\n  const { timezone, userInput } = args.inputVars;\n\n  // Check if the user has inputted the required variables\n  if (!timezone || !userInput) {\n    return {\n      // Returns the error path so we can continue the design\n      next: { path: 'error' }, \n      // Renders a debug message in Voiceflow\n      trace: [{ type: \"debug\", payload: { message: \"Missing required input variables for this function\" } }] \n    };\n  }\n\n  try {\n    const input = userInput.toLowerCase().trim();\n    const now = new Date();\n    let targetDate = new Date();\n    let timeSpecified = false;\n\n    // Check for ambiguous inputs that need clarification\n    const ambiguousInputs = [\n      /^(morning|afternoon|evening|night)$/i,\n      /^(later|soon|sometime)$/i,\n      /^(this weekend)$/i,\n      /^(next week|next month)$(?!.*at)/i\n    ];\n    \n    for (const pattern of ambiguousInputs) {\n      if (pattern.test(input)) {\n        return {\n          next: { path: 'ambiguous' },\n          outputVars: { \n            originalInput: userInput,\n            suggestion: \"Please specify a day and time, like 'tomorrow at 2pm' or 'next Monday at 9am'\"\n          },\n          trace: [{ type: \"debug\", payload: { message: `Ambiguous input: \"${userInput}\" - needs clarification` } }]\n        };\n      }\n    }\n\n    // Handle day of week expressions (e.g., \"next monday\", \"upcoming wednesday\", \"next week friday\")\n    const dayOfWeekMatch = input.match(/(next|upcoming|this)(\\s+week)?\\s+(monday|tuesday|wednesday|thursday|friday|saturday|sunday)/i);\n    if (dayOfWeekMatch) {\n      const dayNames = {\n        'sunday': 0, 'monday': 1, 'tuesday': 2, 'wednesday': 3,\n        'thursday': 4, 'friday': 5, 'saturday': 6\n      };\n      \n      const targetDayName = dayOfWeekMatch[3].toLowerCase();\n      const targetDayNum = dayNames[targetDayName];\n      const currentDayNum = now.getDay();\n      \n      let daysToAdd = targetDayNum - currentDayNum;\n      \n      // If it's the same day or past, go to next week\n      if (daysToAdd <= 0) {\n        daysToAdd += 7;\n      }\n      \n      targetDate.setDate(now.getDate() + daysToAdd);\n      \n      // Extract time if specified\n      const timeMatch = input.match(/at\\s*(\\d{1,2})(?::(\\d{2}))?\\s*(am|pm)?/i);\n      if (timeMatch) {\n        let hours = parseInt(timeMatch[1]);\n        const minutes = parseInt(timeMatch[2] || '0');\n        const ampm = timeMatch[3]?.toLowerCase();\n        \n        // Validate time\n        if (hours > 24 || minutes > 59 || (ampm && hours > 12)) {\n          return {\n            next: { path: 'invalid_time' },\n            outputVars: { \n              originalInput: userInput,\n              suggestion: \"Please use valid time format like '2pm', '14:30', or '9:15am'\"\n            },\n            trace: [{ type: \"debug\", payload: { message: `Invalid time format in: \"${userInput}\"` } }]\n          };\n        }\n        \n        if (ampm === 'pm' && hours !== 12) hours += 12;\n        if (ampm === 'am' && hours === 12) hours = 0;\n        \n        targetDate.setHours(hours, minutes, 0, 0);\n        timeSpecified = true;\n      } else {\n        // No time specified - use default but flag it\n        targetDate.setHours(9, 0, 0, 0);\n        return {\n          next: { path: 'no_time_specified' },\n          outputVars: { \n            iso8601DateTime: targetDate.toISOString().slice(0, -1) + timezone,\n            originalInput: userInput,\n            defaultTime: \"09:00\",\n            suggestion: \"Time not specified, defaulted to 9:00 AM\"\n          },\n          trace: [{ type: \"debug\", payload: { message: `No time specified for \"${userInput}\", defaulted to 9:00 AM` } }]\n        };\n      }\n    }\n    // Handle relative time expressions\n    else if (input.includes('tomorrow')) {\n      targetDate.setDate(now.getDate() + 1);\n      // Extract time if specified (e.g., \"tomorrow at 3pm\")\n      const timeMatch = input.match(/at\\s*(\\d{1,2})(?::(\\d{2}))?\\s*(am|pm)?/i);\n      if (timeMatch) {\n        let hours = parseInt(timeMatch[1]);\n        const minutes = parseInt(timeMatch[2] || '0');\n        const ampm = timeMatch[3]?.toLowerCase();\n        \n        // Validate time\n        if (hours > 24 || minutes > 59 || (ampm && hours > 12)) {\n          return {\n            next: { path: 'invalid_time' },\n            outputVars: { \n              originalInput: userInput,\n              suggestion: \"Please use valid time format like '2pm', '14:30', or '9:15am'\"\n            },\n            trace: [{ type: \"debug\", payload: { message: `Invalid time format in: \"${userInput}\"` } }]\n          };\n        }\n        \n        if (ampm === 'pm' && hours !== 12) hours += 12;\n        if (ampm === 'am' && hours === 12) hours = 0;\n        \n        targetDate.setHours(hours, minutes, 0, 0);\n        timeSpecified = true;\n      } else {\n        targetDate.setHours(9, 0, 0, 0);\n        return {\n          next: { path: 'no_time_specified' },\n          outputVars: { \n            iso8601DateTime: targetDate.toISOString().slice(0, -1) + timezone,\n            originalInput: userInput,\n            defaultTime: \"09:00\",\n            suggestion: \"Time not specified, defaulted to 9:00 AM\"\n          },\n          trace: [{ type: \"debug\", payload: { message: `No time specified for \"${userInput}\", defaulted to 9:00 AM` } }]\n        };\n      }\n    }\n    else if (input.includes('today')) {\n      // Extract time if specified\n      const timeMatch = input.match(/at\\s*(\\d{1,2})(?::(\\d{2}))?\\s*(am|pm)?/i);\n      if (timeMatch) {\n        let hours = parseInt(timeMatch[1]);\n        const minutes = parseInt(timeMatch[2] || '0');\n        const ampm = timeMatch[3]?.toLowerCase();\n        \n        // Validate time\n        if (hours > 24 || minutes > 59 || (ampm && hours > 12)) {\n          return {\n            next: { path: 'invalid_time' },\n            outputVars: { \n              originalInput: userInput,\n              suggestion: \"Please use valid time format like '2pm', '14:30', or '9:15am'\"\n            },\n            trace: [{ type: \"debug\", payload: { message: `Invalid time format in: \"${userInput}\"` } }]\n          };\n        }\n        \n        if (ampm === 'pm' && hours !== 12) hours += 12;\n        if (ampm === 'am' && hours === 12) hours = 0;\n        \n        targetDate.setHours(hours, minutes, 0, 0);\n        timeSpecified = true;\n        \n        // Check if time has already passed today\n        if (targetDate < now) {\n          return {\n            next: { path: 'past_date' },\n            outputVars: { \n              originalInput: userInput,\n              suggestion: \"This time has already passed today. Did you mean tomorrow?\"\n            },\n            trace: [{ type: \"debug\", payload: { message: `Time \"${userInput}\" has already passed today` } }]\n          };\n        }\n      } else {\n        return {\n          next: { path: 'no_time_specified' },\n          outputVars: { \n            iso8601DateTime: targetDate.toISOString().slice(0, -1) + timezone,\n            originalInput: userInput,\n            defaultTime: \"current\",\n            suggestion: \"Time not specified for 'today', using current time\"\n          },\n          trace: [{ type: \"debug\", payload: { message: `No time specified for \"${userInput}\", using current time` } }]\n        };\n      }\n    }\n    else if (input.includes('next week') && !input.match(/(monday|tuesday|wednesday|thursday|friday|saturday|sunday)/i)) {\n      targetDate.setDate(now.getDate() + 7);\n      targetDate.setHours(9, 0, 0, 0);\n      return {\n        next: { path: 'no_time_specified' },\n        outputVars: { \n          iso8601DateTime: targetDate.toISOString().slice(0, -1) + timezone,\n          originalInput: userInput,\n          defaultTime: \"09:00\",\n          suggestion: \"Time not specified, defaulted to 9:00 AM\"\n        },\n        trace: [{ type: \"debug\", payload: { message: `No time specified for \"${userInput}\", defaulted to 9:00 AM` } }]\n      };\n    }\n    else if (input.includes('next month')) {\n      targetDate.setMonth(now.getMonth() + 1);\n      targetDate.setHours(9, 0, 0, 0);\n      return {\n        next: { path: 'no_time_specified' },\n        outputVars: { \n          iso8601DateTime: targetDate.toISOString().slice(0, -1) + timezone,\n          originalInput: userInput,\n          defaultTime: \"09:00\",\n          suggestion: \"Time not specified, defaulted to 9:00 AM\"\n        },\n        trace: [{ type: \"debug\", payload: { message: `No time specified for \"${userInput}\", defaulted to 9:00 AM` } }]\n      };\n    }\n    else if (input.match(/in\\s*(\\d+)\\s*(hour|hr|hours|hrs)/i)) {\n      const hoursMatch = input.match(/in\\s*(\\d+)\\s*(hour|hr|hours|hrs)/i);\n      const hours = parseInt(hoursMatch[1]);\n      targetDate.setTime(now.getTime() + (hours * 60 * 60 * 1000));\n      timeSpecified = true;\n    }\n    else if (input.match(/in\\s*(\\d+)\\s*(minute|min|minutes|mins)/i)) {\n      const minutesMatch = input.match(/in\\s*(\\d+)\\s*(minute|min|minutes|mins)/i);\n      const minutes = parseInt(minutesMatch[1]);\n      targetDate.setTime(now.getTime() + (minutes * 60 * 1000));\n      timeSpecified = true;\n    }\n    else if (input.match(/in\\s*(\\d+)\\s*(day|days)/i)) {\n      const daysMatch = input.match(/in\\s*(\\d+)\\s*(day|days)/i);\n      const days = parseInt(daysMatch[1]);\n      targetDate.setDate(now.getDate() + days);\n      targetDate.setHours(9, 0, 0, 0);\n      return {\n        next: { path: 'no_time_specified' },\n        outputVars: { \n          iso8601DateTime: targetDate.toISOString().slice(0, -1) + timezone,\n          originalInput: userInput,\n          defaultTime: \"09:00\",\n          suggestion: \"Time not specified, defaulted to 9:00 AM\"\n        },\n        trace: [{ type: \"debug\", payload: { message: `No time specified for \"${userInput}\", defaulted to 9:00 AM` } }]\n      };\n    }\n    // Handle past date expressions\n    else if (input.includes('yesterday') || input.includes('last')) {\n      return {\n        next: { path: 'past_date' },\n        outputVars: { \n          originalInput: userInput,\n          suggestion: \"This refers to a past date. Did you mean next/upcoming instead?\"\n        },\n        trace: [{ type: \"debug\", payload: { message: `Past date detected in: \"${userInput}\"` } }]\n      };\n    }\n    // Handle specific dates (e.g., \"January 15\", \"Jan 15 2024\", \"12/25/2024\", \"17-06-2025\")\n    else if (input.match(/(\\d{1,2})[\\/\\-](\\d{1,2})[\\/\\-](\\d{4})/)) {\n      const dateMatch = input.match(/(\\d{1,2})[\\/\\-](\\d{1,2})[\\/\\-](\\d{4})/);\n      let month, day, year;\n      \n      // Handle different formats: DD-MM-YYYY vs MM/DD/YYYY\n      if (input.includes('-')) {\n        // European format: DD-MM-YYYY\n        day = parseInt(dateMatch[1]);\n        month = parseInt(dateMatch[2]) - 1; // Month is 0-indexed\n        year = parseInt(dateMatch[3]);\n      } else {\n        // US format: MM/DD/YYYY\n        month = parseInt(dateMatch[1]) - 1; // Month is 0-indexed\n        day = parseInt(dateMatch[2]);\n        year = parseInt(dateMatch[3]);\n      }\n      \n      targetDate = new Date(year, month, day, 9, 0, 0, 0);\n      \n      // Extract time if specified\n      const timeMatch = input.match(/at\\s*(\\d{1,2})(?::(\\d{2}))?\\s*(am|pm)?/i);\n      if (timeMatch) {\n        let hours = parseInt(timeMatch[1]);\n        const minutes = parseInt(timeMatch[2] || '0');\n        const ampm = timeMatch[3]?.toLowerCase();\n        \n        // Validate time\n        if (hours > 24 || minutes > 59 || (ampm && hours > 12)) {\n          return {\n            next: { path: 'invalid_time' },\n            outputVars: { \n              originalInput: userInput,\n              suggestion: \"Please use valid time format like '2pm', '14:30', or '9:15am'\"\n            },\n            trace: [{ type: \"debug\", payload: { message: `Invalid time format in: \"${userInput}\"` } }]\n          };\n        }\n        \n        if (ampm === 'pm' && hours !== 12) hours += 12;\n        if (ampm === 'am' && hours === 12) hours = 0;\n        \n        targetDate.setHours(hours, minutes, 0, 0);\n        timeSpecified = true;\n      }\n      \n      // Check if date is in the past\n      if (targetDate < now) {\n        return {\n          next: { path: 'past_date' },\n          outputVars: { \n            originalInput: userInput,\n            suggestion: \"This date has already passed. Please specify a future date.\"\n          },\n          trace: [{ type: \"debug\", payload: { message: `Past date specified: \"${userInput}\"` } }]\n        };\n      }\n      \n      if (!timeSpecified) {\n        return {\n          next: { path: 'no_time_specified' },\n          outputVars: { \n            iso8601DateTime: targetDate.toISOString().slice(0, -1) + timezone,\n            originalInput: userInput,\n            defaultTime: \"09:00\",\n            suggestion: \"Time not specified, defaulted to 9:00 AM\"\n          },\n          trace: [{ type: \"debug\", payload: { message: `No time specified for \"${userInput}\", defaulted to 9:00 AM` } }]\n        };\n      }\n    }\n    else if (input.match(/(january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\\s*(\\d{1,2})/i)) {\n      const monthMatch = input.match(/(january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\\s*(\\d{1,2})/i);\n      const monthNames = {\n        'january': 0, 'jan': 0, 'february': 1, 'feb': 1, 'march': 2, 'mar': 2,\n        'april': 3, 'apr': 3, 'may': 4, 'june': 5, 'jun': 5,\n        'july': 6, 'jul': 6, 'august': 7, 'aug': 7, 'september': 8, 'sep': 8,\n        'october': 9, 'oct': 9, 'november': 10, 'nov': 10, 'december': 11, 'dec': 11\n      };\n      const month = monthNames[monthMatch[1].toLowerCase()];\n      const day = parseInt(monthMatch[2]);\n      const year = now.getFullYear();\n      targetDate = new Date(year, month, day, 9, 0, 0, 0);\n      \n      // If the date has passed this year, set it for next year\n      if (targetDate < now) {\n        targetDate.setFullYear(year + 1);\n      }\n      \n      return {\n        next: { path: 'no_time_specified' },\n        outputVars: { \n          iso8601DateTime: targetDate.toISOString().slice(0, -1) + timezone,\n          originalInput: userInput,\n          defaultTime: \"09:00\",\n          suggestion: \"Time not specified, defaulted to 9:00 AM\"\n        },\n        trace: [{ type: \"debug\", payload: { message: `No time specified for \"${userInput}\", defaulted to 9:00 AM` } }]\n      };\n    }\n    // Handle time only (e.g., \"3pm\", \"15:30\", \"9 AM\")\n    else if (input.match(/(\\d{1,2})(?::(\\d{2}))?\\s*(am|pm)/i)) {\n      const timeMatch = input.match(/(\\d{1,2})(?::(\\d{2}))?\\s*(am|pm)/i);\n      let hours = parseInt(timeMatch[1]);\n      const minutes = parseInt(timeMatch[2] || '0');\n      const ampm = timeMatch[3].toLowerCase();\n      \n      // Validate time\n      if (hours > 12 || minutes > 59) {\n        return {\n          next: { path: 'invalid_time' },\n          outputVars: { \n            originalInput: userInput,\n            suggestion: \"Please use valid time format like '2pm', '14:30', or '9:15am'\"\n          },\n          trace: [{ type: \"debug\", payload: { message: `Invalid time format in: \"${userInput}\"` } }]\n        };\n      }\n      \n      if (ampm === 'pm' && hours !== 12) hours += 12;\n      if (ampm === 'am' && hours === 12) hours = 0;\n      \n      targetDate.setHours(hours, minutes, 0, 0);\n      \n      // If the time has passed today, set it for tomorrow\n      if (targetDate < now) {\n        targetDate.setDate(now.getDate() + 1);\n      }\n      timeSpecified = true;\n    }\n    else if (input.match(/(\\d{1,2}):(\\d{2})/)) {\n      const timeMatch = input.match(/(\\d{1,2}):(\\d{2})/);\n      const hours = parseInt(timeMatch[1]);\n      const minutes = parseInt(timeMatch[2]);\n      \n      // Validate time\n      if (hours > 23 || minutes > 59) {\n        return {\n          next: { path: 'invalid_time' },\n          outputVars: { \n            originalInput: userInput,\n            suggestion: \"Please use valid time format like '2pm', '14:30', or '9:15am'\"\n          },\n          trace: [{ type: \"debug\", payload: { message: `Invalid time format in: \"${userInput}\"` } }]\n        };\n      }\n      \n      targetDate.setHours(hours, minutes, 0, 0);\n      \n      // If the time has passed today, set it for tomorrow\n      if (targetDate < now) {\n        targetDate.setDate(now.getDate() + 1);\n      }\n      timeSpecified = true;\n    }\n    else {\n      return {\n        next: { path: 'requires_clarification' },\n        outputVars: { \n          originalInput: userInput,\n          suggestion: \"Could not understand the date/time. Try formats like 'tomorrow at 2pm', 'next Friday at 9am', or 'July 4th at 3:30pm'\"\n        },\n        trace: [{ type: \"debug\", payload: { message: `Could not parse: \"${userInput}\"` } }]\n      };\n    }\n\n    // Convert to ISO 8601 format with timezone\n    const iso8601 = targetDate.toISOString().slice(0, -1) + timezone;\n\n    return {\n      // Map our output variables\n      outputVars: { \n        iso8601DateTime: iso8601,\n        parsedInput: userInput,\n        timezone: timezone\n      },\n      // Map the success path so we can continue in our flow\n      next: { path: 'succes' },\n      trace: [{ type: \"debug\", payload: { message: `Successfully converted \"${userInput}\" to ${iso8601}` } }]\n    };\n\n  } catch (error) {\n    return {\n      // Maps the error path so we can continue in our design\n      next: { path: 'error' },\n      // Renders a debug message in Voiceflow with the error\n      trace: [{ type: \"debug\", payload: { message: \"Error: \" + error.message } }]\n    };\n  }\n}",
+      "image": "https://cm4-production-assets.s3.amazonaws.com/1751126838554-clock-icon.png",
+      "description": "Converts natural language date/time expressions to ISO 8601 format. Handles relative dates, specific times, and day-of-week references with timezone support.",
+      "pathOrder": [
+        "68611d837d18db1e5ab3c417",
+        "68611d837d18db1e5ab3c418",
+        "68611d837d18db1e5ab3c419",
+        "68611d837d18db1e5ab3c41a",
+        "68611d837d18db1e5ab3c41b",
+        "68611d837d18db1e5ab3c41c",
+        "68611d837d18db1e5ab3c41d"
+      ],
+      "createdAt": "2025-06-29T11:03:31.000Z",
+      "updatedAt": "2025-06-29T11:03:31.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "68600f1709b51378c94ac89d",
+      "name": "Natural Language to ISO 8601 Converter",
+      "createdByID": 1069714,
+      "folderID": null,
+      "code": "export default async function main(args) {\n  const { timezone, userInput } = args.inputVars;\n\n  // Check if the user has inputted the required variables\n  if (!timezone || !userInput) {\n    return {\n      // Returns the error path so we can continue the design\n      next: { path: 'error' }, \n      // Renders a debug message in Voiceflow\n      trace: [{ type: \"debug\", payload: { message: \"Missing required input variables for this function\" } }] \n    };\n  }\n\n  try {\n    const input = userInput.toLowerCase().trim();\n    const now = new Date();\n    let targetDate = new Date();\n    let timeSpecified = false;\n\n    // Check for ambiguous inputs that need clarification\n    const ambiguousInputs = [\n      /^(morning|afternoon|evening|night)$/i,\n      /^(later|soon|sometime)$/i,\n      /^(this weekend)$/i,\n      /^(next week|next month)$(?!.*at)/i\n    ];\n    \n    for (const pattern of ambiguousInputs) {\n      if (pattern.test(input)) {\n        return {\n          next: { path: 'ambiguous' },\n          outputVars: { \n            originalInput: userInput,\n            suggestion: \"Please specify a day and time, like 'tomorrow at 2pm' or 'next Monday at 9am'\"\n          },\n          trace: [{ type: \"debug\", payload: { message: `Ambiguous input: \"${userInput}\" - needs clarification` } }]\n        };\n      }\n    }\n\n    // Handle day of week expressions (e.g., \"next monday\", \"upcoming wednesday\", \"next week friday\")\n    const dayOfWeekMatch = input.match(/(next|upcoming|this)(\\s+week)?\\s+(monday|tuesday|wednesday|thursday|friday|saturday|sunday)/i);\n    if (dayOfWeekMatch) {\n      const dayNames = {\n        'sunday': 0, 'monday': 1, 'tuesday': 2, 'wednesday': 3,\n        'thursday': 4, 'friday': 5, 'saturday': 6\n      };\n      \n      const targetDayName = dayOfWeekMatch[3].toLowerCase();\n      const targetDayNum = dayNames[targetDayName];\n      const currentDayNum = now.getDay();\n      \n      let daysToAdd = targetDayNum - currentDayNum;\n      \n      // If it's the same day or past, go to next week\n      if (daysToAdd <= 0) {\n        daysToAdd += 7;\n      }\n      \n      targetDate.setDate(now.getDate() + daysToAdd);\n      \n      // Extract time if specified\n      const timeMatch = input.match(/at\\s*(\\d{1,2})(?::(\\d{2}))?\\s*(am|pm)?/i);\n      if (timeMatch) {\n        let hours = parseInt(timeMatch[1]);\n        const minutes = parseInt(timeMatch[2] || '0');\n        const ampm = timeMatch[3]?.toLowerCase();\n        \n        // Validate time\n        if (hours > 24 || minutes > 59 || (ampm && hours > 12)) {\n          return {\n            next: { path: 'invalid_time' },\n            outputVars: { \n              originalInput: userInput,\n              suggestion: \"Please use valid time format like '2pm', '14:30', or '9:15am'\"\n            },\n            trace: [{ type: \"debug\", payload: { message: `Invalid time format in: \"${userInput}\"` } }]\n          };\n        }\n        \n        if (ampm === 'pm' && hours !== 12) hours += 12;\n        if (ampm === 'am' && hours === 12) hours = 0;\n        \n        targetDate.setHours(hours, minutes, 0, 0);\n        timeSpecified = true;\n      } else {\n        // No time specified - use default but flag it\n        targetDate.setHours(9, 0, 0, 0);\n        return {\n          next: { path: 'no_time_specified' },\n          outputVars: { \n            iso8601DateTime: targetDate.toISOString().slice(0, -1) + timezone,\n            originalInput: userInput,\n            defaultTime: \"09:00\",\n            suggestion: \"Time not specified, defaulted to 9:00 AM\"\n          },\n          trace: [{ type: \"debug\", payload: { message: `No time specified for \"${userInput}\", defaulted to 9:00 AM` } }]\n        };\n      }\n    }\n    // Handle relative time expressions\n    else if (input.includes('tomorrow')) {\n      targetDate.setDate(now.getDate() + 1);\n      // Extract time if specified (e.g., \"tomorrow at 3pm\")\n      const timeMatch = input.match(/at\\s*(\\d{1,2})(?::(\\d{2}))?\\s*(am|pm)?/i);\n      if (timeMatch) {\n        let hours = parseInt(timeMatch[1]);\n        const minutes = parseInt(timeMatch[2] || '0');\n        const ampm = timeMatch[3]?.toLowerCase();\n        \n        // Validate time\n        if (hours > 24 || minutes > 59 || (ampm && hours > 12)) {\n          return {\n            next: { path: 'invalid_time' },\n            outputVars: { \n              originalInput: userInput,\n              suggestion: \"Please use valid time format like '2pm', '14:30', or '9:15am'\"\n            },\n            trace: [{ type: \"debug\", payload: { message: `Invalid time format in: \"${userInput}\"` } }]\n          };\n        }\n        \n        if (ampm === 'pm' && hours !== 12) hours += 12;\n        if (ampm === 'am' && hours === 12) hours = 0;\n        \n        targetDate.setHours(hours, minutes, 0, 0);\n        timeSpecified = true;\n      } else {\n        targetDate.setHours(9, 0, 0, 0);\n        return {\n          next: { path: 'no_time_specified' },\n          outputVars: { \n            iso8601DateTime: targetDate.toISOString().slice(0, -1) + timezone,\n            originalInput: userInput,\n            defaultTime: \"09:00\",\n            suggestion: \"Time not specified, defaulted to 9:00 AM\"\n          },\n          trace: [{ type: \"debug\", payload: { message: `No time specified for \"${userInput}\", defaulted to 9:00 AM` } }]\n        };\n      }\n    }\n    else if (input.includes('today')) {\n      // Extract time if specified\n      const timeMatch = input.match(/at\\s*(\\d{1,2})(?::(\\d{2}))?\\s*(am|pm)?/i);\n      if (timeMatch) {\n        let hours = parseInt(timeMatch[1]);\n        const minutes = parseInt(timeMatch[2] || '0');\n        const ampm = timeMatch[3]?.toLowerCase();\n        \n        // Validate time\n        if (hours > 24 || minutes > 59 || (ampm && hours > 12)) {\n          return {\n            next: { path: 'invalid_time' },\n            outputVars: { \n              originalInput: userInput,\n              suggestion: \"Please use valid time format like '2pm', '14:30', or '9:15am'\"\n            },\n            trace: [{ type: \"debug\", payload: { message: `Invalid time format in: \"${userInput}\"` } }]\n          };\n        }\n        \n        if (ampm === 'pm' && hours !== 12) hours += 12;\n        if (ampm === 'am' && hours === 12) hours = 0;\n        \n        targetDate.setHours(hours, minutes, 0, 0);\n        timeSpecified = true;\n        \n        // Check if time has already passed today\n        if (targetDate < now) {\n          return {\n            next: { path: 'past_date' },\n            outputVars: { \n              originalInput: userInput,\n              suggestion: \"This time has already passed today. Did you mean tomorrow?\"\n            },\n            trace: [{ type: \"debug\", payload: { message: `Time \"${userInput}\" has already passed today` } }]\n          };\n        }\n      } else {\n        return {\n          next: { path: 'no_time_specified' },\n          outputVars: { \n            iso8601DateTime: targetDate.toISOString().slice(0, -1) + timezone,\n            originalInput: userInput,\n            defaultTime: \"current\",\n            suggestion: \"Time not specified for 'today', using current time\"\n          },\n          trace: [{ type: \"debug\", payload: { message: `No time specified for \"${userInput}\", using current time` } }]\n        };\n      }\n    }\n    else if (input.includes('next week') && !input.match(/(monday|tuesday|wednesday|thursday|friday|saturday|sunday)/i)) {\n      targetDate.setDate(now.getDate() + 7);\n      targetDate.setHours(9, 0, 0, 0);\n      return {\n        next: { path: 'no_time_specified' },\n        outputVars: { \n          iso8601DateTime: targetDate.toISOString().slice(0, -1) + timezone,\n          originalInput: userInput,\n          defaultTime: \"09:00\",\n          suggestion: \"Time not specified, defaulted to 9:00 AM\"\n        },\n        trace: [{ type: \"debug\", payload: { message: `No time specified for \"${userInput}\", defaulted to 9:00 AM` } }]\n      };\n    }\n    else if (input.includes('next month')) {\n      targetDate.setMonth(now.getMonth() + 1);\n      targetDate.setHours(9, 0, 0, 0);\n      return {\n        next: { path: 'no_time_specified' },\n        outputVars: { \n          iso8601DateTime: targetDate.toISOString().slice(0, -1) + timezone,\n          originalInput: userInput,\n          defaultTime: \"09:00\",\n          suggestion: \"Time not specified, defaulted to 9:00 AM\"\n        },\n        trace: [{ type: \"debug\", payload: { message: `No time specified for \"${userInput}\", defaulted to 9:00 AM` } }]\n      };\n    }\n    else if (input.match(/in\\s*(\\d+)\\s*(hour|hr|hours|hrs)/i)) {\n      const hoursMatch = input.match(/in\\s*(\\d+)\\s*(hour|hr|hours|hrs)/i);\n      const hours = parseInt(hoursMatch[1]);\n      targetDate.setTime(now.getTime() + (hours * 60 * 60 * 1000));\n      timeSpecified = true;\n    }\n    else if (input.match(/in\\s*(\\d+)\\s*(minute|min|minutes|mins)/i)) {\n      const minutesMatch = input.match(/in\\s*(\\d+)\\s*(minute|min|minutes|mins)/i);\n      const minutes = parseInt(minutesMatch[1]);\n      targetDate.setTime(now.getTime() + (minutes * 60 * 1000));\n      timeSpecified = true;\n    }\n    else if (input.match(/in\\s*(\\d+)\\s*(day|days)/i)) {\n      const daysMatch = input.match(/in\\s*(\\d+)\\s*(day|days)/i);\n      const days = parseInt(daysMatch[1]);\n      targetDate.setDate(now.getDate() + days);\n      targetDate.setHours(9, 0, 0, 0);\n      return {\n        next: { path: 'no_time_specified' },\n        outputVars: { \n          iso8601DateTime: targetDate.toISOString().slice(0, -1) + timezone,\n          originalInput: userInput,\n          defaultTime: \"09:00\",\n          suggestion: \"Time not specified, defaulted to 9:00 AM\"\n        },\n        trace: [{ type: \"debug\", payload: { message: `No time specified for \"${userInput}\", defaulted to 9:00 AM` } }]\n      };\n    }\n    // Handle past date expressions\n    else if (input.includes('yesterday') || input.includes('last')) {\n      return {\n        next: { path: 'past_date' },\n        outputVars: { \n          originalInput: userInput,\n          suggestion: \"This refers to a past date. Did you mean next/upcoming instead?\"\n        },\n        trace: [{ type: \"debug\", payload: { message: `Past date detected in: \"${userInput}\"` } }]\n      };\n    }\n    // Handle specific dates (e.g., \"January 15\", \"Jan 15 2024\", \"12/25/2024\", \"17-06-2025\")\n    else if (input.match(/(\\d{1,2})[\\/\\-](\\d{1,2})[\\/\\-](\\d{4})/)) {\n      const dateMatch = input.match(/(\\d{1,2})[\\/\\-](\\d{1,2})[\\/\\-](\\d{4})/);\n      let month, day, year;\n      \n      // Handle different formats: DD-MM-YYYY vs MM/DD/YYYY\n      if (input.includes('-')) {\n        // European format: DD-MM-YYYY\n        day = parseInt(dateMatch[1]);\n        month = parseInt(dateMatch[2]) - 1; // Month is 0-indexed\n        year = parseInt(dateMatch[3]);\n      } else {\n        // US format: MM/DD/YYYY\n        month = parseInt(dateMatch[1]) - 1; // Month is 0-indexed\n        day = parseInt(dateMatch[2]);\n        year = parseInt(dateMatch[3]);\n      }\n      \n      targetDate = new Date(year, month, day, 9, 0, 0, 0);\n      \n      // Extract time if specified\n      const timeMatch = input.match(/at\\s*(\\d{1,2})(?::(\\d{2}))?\\s*(am|pm)?/i);\n      if (timeMatch) {\n        let hours = parseInt(timeMatch[1]);\n        const minutes = parseInt(timeMatch[2] || '0');\n        const ampm = timeMatch[3]?.toLowerCase();\n        \n        // Validate time\n        if (hours > 24 || minutes > 59 || (ampm && hours > 12)) {\n          return {\n            next: { path: 'invalid_time' },\n            outputVars: { \n              originalInput: userInput,\n              suggestion: \"Please use valid time format like '2pm', '14:30', or '9:15am'\"\n            },\n            trace: [{ type: \"debug\", payload: { message: `Invalid time format in: \"${userInput}\"` } }]\n          };\n        }\n        \n        if (ampm === 'pm' && hours !== 12) hours += 12;\n        if (ampm === 'am' && hours === 12) hours = 0;\n        \n        targetDate.setHours(hours, minutes, 0, 0);\n        timeSpecified = true;\n      }\n      \n      // Check if date is in the past\n      if (targetDate < now) {\n        return {\n          next: { path: 'past_date' },\n          outputVars: { \n            originalInput: userInput,\n            suggestion: \"This date has already passed. Please specify a future date.\"\n          },\n          trace: [{ type: \"debug\", payload: { message: `Past date specified: \"${userInput}\"` } }]\n        };\n      }\n      \n      if (!timeSpecified) {\n        return {\n          next: { path: 'no_time_specified' },\n          outputVars: { \n            iso8601DateTime: targetDate.toISOString().slice(0, -1) + timezone,\n            originalInput: userInput,\n            defaultTime: \"09:00\",\n            suggestion: \"Time not specified, defaulted to 9:00 AM\"\n          },\n          trace: [{ type: \"debug\", payload: { message: `No time specified for \"${userInput}\", defaulted to 9:00 AM` } }]\n        };\n      }\n    }\n    else if (input.match(/(january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\\s*(\\d{1,2})/i)) {\n      const monthMatch = input.match(/(january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\\s*(\\d{1,2})/i);\n      const monthNames = {\n        'january': 0, 'jan': 0, 'february': 1, 'feb': 1, 'march': 2, 'mar': 2,\n        'april': 3, 'apr': 3, 'may': 4, 'june': 5, 'jun': 5,\n        'july': 6, 'jul': 6, 'august': 7, 'aug': 7, 'september': 8, 'sep': 8,\n        'october': 9, 'oct': 9, 'november': 10, 'nov': 10, 'december': 11, 'dec': 11\n      };\n      const month = monthNames[monthMatch[1].toLowerCase()];\n      const day = parseInt(monthMatch[2]);\n      const year = now.getFullYear();\n      targetDate = new Date(year, month, day, 9, 0, 0, 0);\n      \n      // If the date has passed this year, set it for next year\n      if (targetDate < now) {\n        targetDate.setFullYear(year + 1);\n      }\n      \n      return {\n        next: { path: 'no_time_specified' },\n        outputVars: { \n          iso8601DateTime: targetDate.toISOString().slice(0, -1) + timezone,\n          originalInput: userInput,\n          defaultTime: \"09:00\",\n          suggestion: \"Time not specified, defaulted to 9:00 AM\"\n        },\n        trace: [{ type: \"debug\", payload: { message: `No time specified for \"${userInput}\", defaulted to 9:00 AM` } }]\n      };\n    }\n    // Handle time only (e.g., \"3pm\", \"15:30\", \"9 AM\")\n    else if (input.match(/(\\d{1,2})(?::(\\d{2}))?\\s*(am|pm)/i)) {\n      const timeMatch = input.match(/(\\d{1,2})(?::(\\d{2}))?\\s*(am|pm)/i);\n      let hours = parseInt(timeMatch[1]);\n      const minutes = parseInt(timeMatch[2] || '0');\n      const ampm = timeMatch[3].toLowerCase();\n      \n      // Validate time\n      if (hours > 12 || minutes > 59) {\n        return {\n          next: { path: 'invalid_time' },\n          outputVars: { \n            originalInput: userInput,\n            suggestion: \"Please use valid time format like '2pm', '14:30', or '9:15am'\"\n          },\n          trace: [{ type: \"debug\", payload: { message: `Invalid time format in: \"${userInput}\"` } }]\n        };\n      }\n      \n      if (ampm === 'pm' && hours !== 12) hours += 12;\n      if (ampm === 'am' && hours === 12) hours = 0;\n      \n      targetDate.setHours(hours, minutes, 0, 0);\n      \n      // If the time has passed today, set it for tomorrow\n      if (targetDate < now) {\n        targetDate.setDate(now.getDate() + 1);\n      }\n      timeSpecified = true;\n    }\n    else if (input.match(/(\\d{1,2}):(\\d{2})/)) {\n      const timeMatch = input.match(/(\\d{1,2}):(\\d{2})/);\n      const hours = parseInt(timeMatch[1]);\n      const minutes = parseInt(timeMatch[2]);\n      \n      // Validate time\n      if (hours > 23 || minutes > 59) {\n        return {\n          next: { path: 'invalid_time' },\n          outputVars: { \n            originalInput: userInput,\n            suggestion: \"Please use valid time format like '2pm', '14:30', or '9:15am'\"\n          },\n          trace: [{ type: \"debug\", payload: { message: `Invalid time format in: \"${userInput}\"` } }]\n        };\n      }\n      \n      targetDate.setHours(hours, minutes, 0, 0);\n      \n      // If the time has passed today, set it for tomorrow\n      if (targetDate < now) {\n        targetDate.setDate(now.getDate() + 1);\n      }\n      timeSpecified = true;\n    }\n    else {\n      return {\n        next: { path: 'requires_clarification' },\n        outputVars: { \n          originalInput: userInput,\n          suggestion: \"Could not understand the date/time. Try formats like 'tomorrow at 2pm', 'next Friday at 9am', or 'July 4th at 3:30pm'\"\n        },\n        trace: [{ type: \"debug\", payload: { message: `Could not parse: \"${userInput}\"` } }]\n      };\n    }\n\n    // Convert to ISO 8601 format with timezone\n    const iso8601 = targetDate.toISOString().slice(0, -1) + timezone;\n\n    return {\n      // Map our output variables\n      outputVars: { \n        iso8601DateTime: iso8601,\n        parsedInput: userInput,\n        timezone: timezone\n      },\n      // Map the success path so we can continue in our flow\n      next: { path: 'succes' },\n      trace: [{ type: \"debug\", payload: { message: `Successfully converted \"${userInput}\" to ${iso8601}` } }]\n    };\n\n  } catch (error) {\n    return {\n      // Maps the error path so we can continue in our design\n      next: { path: 'error' },\n      // Renders a debug message in Voiceflow with the error\n      trace: [{ type: \"debug\", payload: { message: \"Error: \" + error.message } }]\n    };\n  }\n}",
+      "image": "https://cm4-production-assets.s3.amazonaws.com/1751126511117-download-12.png",
+      "description": "",
+      "pathOrder": [
+        "68600f9609b51378c94ac8ce",
+        "6860184f09b51378c94ad052",
+        "6860185a09b51378c94ad059",
+        "6860186109b51378c94ad060",
+        "6860186a09b51378c94ad067",
+        "6860187309b51378c94ad06e",
+        "6860194509b51378c94ad1c8"
+      ],
+      "createdAt": "2025-06-28T15:49:43.000Z",
+      "updatedAt": "2025-06-28T16:50:13.000Z",
+      "updatedByID": 1069714
+    },
+    {
+      "id": "68602a147d18db1e5aac877a",
+      "name": "Get current time",
+      "createdByID": 1069714,
+      "folderID": null,
+      "code": "export default async function main(args) {\n\n  // Extract input variables from args\n  const {timezone} = args.inputVars;\n\n  // Validate that the required input variables are provided\n  if (!timezone) {\n    return {\n      next: { path: 'error' },\n      trace: [{ type: \"debug\", payload: { message: \"Please provide a timezone.\" } }]\n    };\n  }\n\n  try {\n    // Get the current time\n    const now = new Date();\n  \n    // Get the current day of the week\n    const dayFormatter = new Intl.DateTimeFormat('en-US', {\n        weekday: 'long',\n        timeZone: timezone\n    });\n    const dayOfWeek = dayFormatter.format(now);\n  \n    // Get the current timestamp\n    const currentDate = new Date(now.toLocaleString('en-US', { timeZone: timezone })).toISOString();\n  \n    // Return the extracted variables in outputVars\n    return {\n      outputVars: {\n        current_date: currentDate,\n        day_of_week: dayOfWeek,\n        timezone: timezone,\n      },\n      next: { path: \"success\" },\n      trace: [\n        {\n          type: \"debug\",\n          payload: {\n            message: `Successfully retrieved data: current_date=${currentDate}, day_of_week=${dayOfWeek}, timezone=${timezone}`,\n          },\n        },\n      ],\n    };\n  } catch (error) {\n    // Handle errors and log the error message\n    return {\n      next: { path: \"error\" },\n      trace: [{ type: \"debug\", payload: { message: \"Error: \" + error.message } }],\n    };\n  }\n}",
+      "image": "https://cm4-production-assets.s3.amazonaws.com/1732915708195-clock-icon.png",
+      "description": "Gets the current date and time for a given timezone",
+      "pathOrder": [
+        "68602a147d18db1e5aac877b",
+        "68602a147d18db1e5aac877c"
+      ],
+      "createdAt": "2025-06-28T17:44:52.000Z",
+      "updatedAt": "2025-06-28T17:44:52.000Z",
+      "updatedByID": 1069714
+    }
+  ],
+  "functionPaths": [
+    {
+      "id": "6860184f09b51378c94ad052",
+      "name": "error",
+      "label": "Missing required inputs or unexpected system errors occurred",
+      "functionID": "68600f1709b51378c94ac89d",
+      "createdAt": "2025-06-28T16:29:03.877Z"
+    },
+    {
+      "id": "6860185a09b51378c94ad059",
+      "name": "ambiguous",
+      "label": "Input is too vague and needs clarification (like \"morning\" or \"later\")",
+      "functionID": "68600f1709b51378c94ac89d",
+      "createdAt": "2025-06-28T16:29:14.359Z"
+    },
+    {
+      "id": "6860186a09b51378c94ad067",
+      "name": "invalid_time",
+      "label": "Time format is incorrect (like \"25:00\" or \"15:75 minutes\")",
+      "functionID": "68600f1709b51378c94ac89d",
+      "createdAt": "2025-06-28T16:29:29.999Z"
+    },
+    {
+      "id": "68600f9609b51378c94ac8ce",
+      "name": "succes",
+      "label": "Successfully converted natural language to ISO 8601 with clear date and time",
+      "functionID": "68600f1709b51378c94ac89d",
+      "createdAt": "2025-06-28T15:51:50.051Z"
+    },
+    {
+      "id": "6860194509b51378c94ad1c8",
+      "name": "requires_clarification",
+      "label": "Input cannot be parsed and needs complete reformatting",
+      "functionID": "68600f1709b51378c94ac89d",
+      "createdAt": "2025-06-28T16:33:09.968Z"
+    },
+    {
+      "id": "68602a147d18db1e5aac877b",
+      "name": "success",
+      "label": "Success",
+      "functionID": "68602a147d18db1e5aac877a",
+      "createdAt": "2025-06-28T17:44:52.474Z"
+    },
+    {
+      "id": "6860186109b51378c94ad060",
+      "name": "no_time_specified",
+      "label": "Date is understood but no time given, defaults to 9:00 AM",
+      "functionID": "68600f1709b51378c94ac89d",
+      "createdAt": "2025-06-28T16:29:21.254Z"
+    },
+    {
+      "id": "6860187309b51378c94ad06e",
+      "name": "past_date",
+      "label": "User specified a date/time that has already passed",
+      "functionID": "68600f1709b51378c94ac89d",
+      "createdAt": "2025-06-28T16:29:39.177Z"
+    },
+    {
+      "id": "68602a147d18db1e5aac877c",
+      "name": "error",
+      "label": "Error",
+      "functionID": "68602a147d18db1e5aac877a",
+      "createdAt": "2025-06-28T17:44:52.475Z"
+    },
+    {
+      "id": "68611d837d18db1e5ab3c41c",
+      "name": "past_date",
+      "label": "Past Date",
+      "functionID": "68611d837d18db1e5ab3c416",
+      "createdAt": "2025-06-29T11:03:31.444Z"
+    },
+    {
+      "id": "68611d837d18db1e5ab3c419",
+      "name": "ambiguous",
+      "label": "Ambiguous Input",
+      "functionID": "68611d837d18db1e5ab3c416",
+      "createdAt": "2025-06-29T11:03:31.441Z"
+    },
+    {
+      "id": "68611d837d18db1e5ab3c41a",
+      "name": "no_time_specified",
+      "label": "No Time Specified",
+      "functionID": "68611d837d18db1e5ab3c416",
+      "createdAt": "2025-06-29T11:03:31.442Z"
+    },
+    {
+      "id": "68611d837d18db1e5ab3c41d",
+      "name": "requires_clarification",
+      "label": "Requires Clarification",
+      "functionID": "68611d837d18db1e5ab3c416",
+      "createdAt": "2025-06-29T11:03:31.445Z"
+    },
+    {
+      "id": "68611d837d18db1e5ab3c41b",
+      "name": "invalid_time",
+      "label": "Invalid Time",
+      "functionID": "68611d837d18db1e5ab3c416",
+      "createdAt": "2025-06-29T11:03:31.443Z"
+    },
+    {
+      "id": "68611d837d18db1e5ab3c417",
+      "name": "succes",
+      "label": "Success",
+      "functionID": "68611d837d18db1e5ab3c416",
+      "createdAt": "2025-06-29T11:03:31.439Z"
+    },
+    {
+      "id": "68611d837d18db1e5ab3c418",
+      "name": "error",
+      "label": "Error",
+      "functionID": "68611d837d18db1e5ab3c416",
+      "createdAt": "2025-06-29T11:03:31.440Z"
+    }
+  ],
+  "functionVariables": [
+    {
+      "id": "68600f3809b51378c94ac8ab",
+      "name": "timezone",
+      "type": "input",
+      "functionID": "68600f1709b51378c94ac89d",
+      "description": "ISO 8601 timezone offset format like \"+02:00\" or \"-05:00",
+      "createdAt": "2025-06-28T15:50:16.831Z"
+    },
+    {
+      "id": "68600f3b09b51378c94ac8ac",
+      "name": "userInput",
+      "type": "input",
+      "functionID": "68600f1709b51378c94ac89d",
+      "description": "Natural language date/time expression like \"tomorrow at 3pm\" or \"next",
+      "createdAt": "2025-06-28T15:50:19.346Z"
+    },
+    {
+      "id": "68600f4f09b51378c94ac8ba",
+      "name": "iso8601DateTime",
+      "type": "output",
+      "functionID": "68600f1709b51378c94ac89d",
+      "description": " Converted date/time in ISO 8601 format with timezone",
+      "createdAt": "2025-06-28T15:50:39.622Z"
+    },
+    {
+      "id": "68602a147d18db1e5aac877d",
+      "name": "timezone",
+      "type": "input",
+      "functionID": "68602a147d18db1e5aac877a",
+      "description": "The desired timezone. Should follow the IANA timezone database naming conventions (ie. America/New_York)",
+      "createdAt": "2025-06-28T17:44:52.474Z"
+    },
+    {
+      "id": "68602a147d18db1e5aac877e",
+      "name": "current_date",
+      "type": "output",
+      "functionID": "68602a147d18db1e5aac877a",
+      "description": "The available times that are returned from cal.com and then converted into the desired timezone.",
+      "createdAt": "2025-06-28T17:44:52.475Z"
+    },
+    {
+      "id": "68602a147d18db1e5aac877f",
+      "name": "day_of_week",
+      "type": "output",
+      "functionID": "68602a147d18db1e5aac877a",
+      "description": "The current way of the week.",
+      "createdAt": "2025-06-28T17:44:52.476Z"
+    },
+    {
+      "id": "68602a147d18db1e5aac8780",
+      "name": "timezone",
+      "type": "output",
+      "functionID": "68602a147d18db1e5aac877a",
+      "description": "The timezone that was provided as input.",
+      "createdAt": "2025-06-28T17:44:52.477Z"
+    },
+    {
+      "id": "68611d837d18db1e5ab3c41e",
+      "name": "timezone",
+      "type": "input",
+      "functionID": "68611d837d18db1e5ab3c416",
+      "description": "ISO 8601 timezone offset (e.g., '+02:00', '-05:00')",
+      "createdAt": "2025-06-29T11:03:31.439Z"
+    },
+    {
+      "id": "68611d837d18db1e5ab3c41f",
+      "name": "userInput",
+      "type": "input",
+      "functionID": "68611d837d18db1e5ab3c416",
+      "description": "Natural language date/time expression",
+      "createdAt": "2025-06-29T11:03:31.440Z"
+    },
+    {
+      "id": "68611d837d18db1e5ab3c420",
+      "name": "iso8601DateTime",
+      "type": "output",
+      "functionID": "68611d837d18db1e5ab3c416",
+      "description": "Converted ISO 8601 formatted date/time",
+      "createdAt": "2025-06-29T11:03:31.441Z"
+    },
+    {
+      "id": "68611d837d18db1e5ab3c421",
+      "name": "originalInput",
+      "type": "output",
+      "functionID": "68611d837d18db1e5ab3c416",
+      "description": "Echo of user's original input",
+      "createdAt": "2025-06-29T11:03:31.442Z"
+    },
+    {
+      "id": "68611d837d18db1e5ab3c422",
+      "name": "suggestion",
+      "type": "output",
+      "functionID": "68611d837d18db1e5ab3c416",
+      "description": "Helpful suggestion for improving input",
+      "createdAt": "2025-06-29T11:03:31.443Z"
+    },
+    {
+      "id": "68611d837d18db1e5ab3c423",
+      "name": "timezone",
+      "type": "output",
+      "functionID": "68611d837d18db1e5ab3c416",
+      "description": "Echo of timezone used",
+      "createdAt": "2025-06-29T11:03:31.444Z"
+    },
+    {
+      "id": "68611d837d18db1e5ab3c424",
+      "name": "parsedInput",
+      "type": "output",
+      "functionID": "68611d837d18db1e5ab3c416",
+      "description": "Echo of processed input (success only)",
+      "createdAt": "2025-06-29T11:03:31.445Z"
+    },
+    {
+      "id": "68611d837d18db1e5ab3c425",
+      "name": "defaultTime",
+      "type": "output",
+      "functionID": "68611d837d18db1e5ab3c416",
+      "description": "Default time used when none specified",
+      "createdAt": "2025-06-29T11:03:31.446Z"
+    }
+  ],
+  "project": {
+    "type": "chat",
+    "name": "Management Answering AI",
+    "image": "https://cm4-production-assets.s3.amazonaws.com/1729190521409-square-onyx-1024.jpg",
+    "teamID": "vrk1ZZoxj3",
+    "members": [],
+    "platform": "webchat",
+    "_version": 1.2,
+    "linkType": "STRAIGHT",
+    "creatorID": 1069714,
+    "updatedBy": 1069714,
+    "platformData": {
+      "invocationName": "template project general"
+    },
+    "customThemes": [
+      {
+        "name": "Purp",
+        "palette": {
+          "50": "#f6ebf2",
+          "100": "#f1ddea",
+          "200": "#eaccdf",
+          "300": "#e4bbd6",
+          "400": "#da9ec6",
+          "500": "#d181b8",
+          "600": "#bf64a4",
+          "700": "#984e82",
+          "800": "#70385f",
+          "900": "#47213c"
+        },
+        "standardColor": "#d181b8"
+      }
+    ],
+    "aiAssistSettings": {
+      "aiPlayground": true
+    },
+    "privacy": "private",
+    "apiPrivacy": "public",
+    "_id": "685d72879036e9e5b9069271",
+    "updatedAt": "2025-06-28T23:30:27.539Z",
+    "devVersion": "685d72879036e9e5b9069272",
+    "liveVersion": "685d72879036e9e5b9069273"
+  },
+  "_version": "1.2",
+  "secrets": [],
+  "variableStates": []
+}
